@@ -14,6 +14,9 @@
 #import "Logger.h"
 #import "MyClass.h"
 
+#import "Database.h"
+#import "UserService.h"
+
 @interface ViewController ()
 
 @end
@@ -22,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self interfaceSegregationPrinciple];
     // Do any additional setup after loading the view.
 }
 
@@ -52,5 +56,16 @@
     logClass.logger = logger;
     [logClass log];
 }
+
+// MARK: Interface Segregation Principle
+
+- (void)interfaceSegregationPrinciple {
+    Database *database = [[Database alloc] init];
+    UserService *userService = [[UserService alloc] initWithDatabase:database];
+    [database connect];
+    [userService saveUser:@"SungKaikai" withEmail:@"aaaa.com"];
+    [database disConnect];
+}
+
 
 @end

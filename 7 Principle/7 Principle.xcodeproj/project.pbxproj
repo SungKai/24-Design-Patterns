@@ -21,6 +21,8 @@
 		B5BA203029FFE54B006AAE6E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202F29FFE54B006AAE6E /* Dog.m */; };
 		B5BA203829FFEE47006AAE6E /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA203729FFEE47006AAE6E /* Logger.m */; };
 		B5BA203B29FFEEA0006AAE6E /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA203A29FFEEA0006AAE6E /* MyClass.m */; };
+		B5BA203F29FFF54D006AAE6E /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA203E29FFF54D006AAE6E /* Database.m */; };
+		B5BA204329FFFC15006AAE6E /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA204229FFFC15006AAE6E /* UserService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,11 @@
 		B5BA203729FFEE47006AAE6E /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		B5BA203929FFEEA0006AAE6E /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
 		B5BA203A29FFEEA0006AAE6E /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		B5BA203D29FFF54D006AAE6E /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		B5BA203E29FFF54D006AAE6E /* Database.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		B5BA204029FFFB61006AAE6E /* DatabaseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseProtocol.h; sourceTree = "<group>"; };
+		B5BA204129FFFC15006AAE6E /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
+		B5BA204229FFFC15006AAE6E /* UserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +99,7 @@
 				B5BA202329FFB0CB006AAE6E /* Open_ClosedPrinciple */,
 				B5BA202A29FFE4EB006AAE6E /* LSP */,
 				B5BA203429FFEDAF006AAE6E /* Dependency Inversion Principle */,
+				B5BA203C29FFF232006AAE6E /* Interface Segregation Principle */,
 				B5BA201029FFB08C006AAE6E /* Main.storyboard */,
 				B5BA201329FFB08D006AAE6E /* Assets.xcassets */,
 				B5BA201529FFB08D006AAE6E /* LaunchScreen.storyboard */,
@@ -135,6 +143,18 @@
 				B5BA203A29FFEEA0006AAE6E /* MyClass.m */,
 			);
 			path = "Dependency Inversion Principle";
+			sourceTree = "<group>";
+		};
+		B5BA203C29FFF232006AAE6E /* Interface Segregation Principle */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA204029FFFB61006AAE6E /* DatabaseProtocol.h */,
+				B5BA203D29FFF54D006AAE6E /* Database.h */,
+				B5BA203E29FFF54D006AAE6E /* Database.m */,
+				B5BA204129FFFC15006AAE6E /* UserService.h */,
+				B5BA204229FFFC15006AAE6E /* UserService.m */,
+			);
+			path = "Interface Segregation Principle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,10 +233,12 @@
 				B5BA202929FFB5D9006AAE6E /* AutoDriveDecorator.m in Sources */,
 				B5BA202629FFB1D6006AAE6E /* CarDecorator.m in Sources */,
 				B5BA200929FFB08C006AAE6E /* AppDelegate.m in Sources */,
+				B5BA204329FFFC15006AAE6E /* UserService.m in Sources */,
 				B5BA202D29FFE506006AAE6E /* Animal.m in Sources */,
 				B5BA203B29FFEEA0006AAE6E /* MyClass.m in Sources */,
 				B5BA201A29FFB08D006AAE6E /* main.m in Sources */,
 				B5BA200C29FFB08C006AAE6E /* SceneDelegate.m in Sources */,
+				B5BA203F29FFF54D006AAE6E /* Database.m in Sources */,
 				B5BA203829FFEE47006AAE6E /* Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
