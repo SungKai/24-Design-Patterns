@@ -11,6 +11,9 @@
 
 #import "Dog.h"
 
+#import "Logger.h"
+#import "MyClass.h"
+
 @interface ViewController ()
 
 @end
@@ -39,6 +42,15 @@
 - (void)lsp {
     Animal *animal = [[Dog alloc] init];
     [animal run];  // output: Dog is running
+}
+
+// MARK: Dependency Inversion Principle
+
+- (void)dependencyInversionPrinciple {
+    MyClass *logClass = [[MyClass alloc] init];
+    Logger *logger = [[Logger alloc] init];
+    logClass.logger = logger;
+    [logClass log];
 }
 
 @end

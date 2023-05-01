@@ -19,6 +19,8 @@
 		B5BA202929FFB5D9006AAE6E /* AutoDriveDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202829FFB5D9006AAE6E /* AutoDriveDecorator.m */; };
 		B5BA202D29FFE506006AAE6E /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202C29FFE506006AAE6E /* Animal.m */; };
 		B5BA203029FFE54B006AAE6E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202F29FFE54B006AAE6E /* Dog.m */; };
+		B5BA203829FFEE47006AAE6E /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA203729FFEE47006AAE6E /* Logger.m */; };
+		B5BA203B29FFEEA0006AAE6E /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA203A29FFEEA0006AAE6E /* MyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,11 @@
 		B5BA202C29FFE506006AAE6E /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		B5BA202E29FFE54B006AAE6E /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		B5BA202F29FFE54B006AAE6E /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		B5BA203529FFEDD1006AAE6E /* LoggerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggerProtocol.h; sourceTree = "<group>"; };
+		B5BA203629FFEE47006AAE6E /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		B5BA203729FFEE47006AAE6E /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		B5BA203929FFEEA0006AAE6E /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		B5BA203A29FFEEA0006AAE6E /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,7 @@
 				B5BA200E29FFB08C006AAE6E /* ViewController.m */,
 				B5BA202329FFB0CB006AAE6E /* Open_ClosedPrinciple */,
 				B5BA202A29FFE4EB006AAE6E /* LSP */,
+				B5BA203429FFEDAF006AAE6E /* Dependency Inversion Principle */,
 				B5BA201029FFB08C006AAE6E /* Main.storyboard */,
 				B5BA201329FFB08D006AAE6E /* Assets.xcassets */,
 				B5BA201529FFB08D006AAE6E /* LaunchScreen.storyboard */,
@@ -115,6 +123,18 @@
 				B5BA202F29FFE54B006AAE6E /* Dog.m */,
 			);
 			path = LSP;
+			sourceTree = "<group>";
+		};
+		B5BA203429FFEDAF006AAE6E /* Dependency Inversion Principle */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA203529FFEDD1006AAE6E /* LoggerProtocol.h */,
+				B5BA203629FFEE47006AAE6E /* Logger.h */,
+				B5BA203729FFEE47006AAE6E /* Logger.m */,
+				B5BA203929FFEEA0006AAE6E /* MyClass.h */,
+				B5BA203A29FFEEA0006AAE6E /* MyClass.m */,
+			);
+			path = "Dependency Inversion Principle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,8 +214,10 @@
 				B5BA202629FFB1D6006AAE6E /* CarDecorator.m in Sources */,
 				B5BA200929FFB08C006AAE6E /* AppDelegate.m in Sources */,
 				B5BA202D29FFE506006AAE6E /* Animal.m in Sources */,
+				B5BA203B29FFEEA0006AAE6E /* MyClass.m in Sources */,
 				B5BA201A29FFB08D006AAE6E /* main.m in Sources */,
 				B5BA200C29FFB08C006AAE6E /* SceneDelegate.m in Sources */,
+				B5BA203829FFEE47006AAE6E /* Logger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
