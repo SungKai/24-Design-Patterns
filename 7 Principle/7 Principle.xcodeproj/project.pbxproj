@@ -17,6 +17,8 @@
 		B5BA202229FFB0C5006AAE6E /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202129FFB0C5006AAE6E /* Car.m */; };
 		B5BA202629FFB1D6006AAE6E /* CarDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202529FFB1D6006AAE6E /* CarDecorator.m */; };
 		B5BA202929FFB5D9006AAE6E /* AutoDriveDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202829FFB5D9006AAE6E /* AutoDriveDecorator.m */; };
+		B5BA202D29FFE506006AAE6E /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202C29FFE506006AAE6E /* Animal.m */; };
+		B5BA203029FFE54B006AAE6E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA202F29FFE54B006AAE6E /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		B5BA202529FFB1D6006AAE6E /* CarDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarDecorator.m; sourceTree = "<group>"; };
 		B5BA202729FFB5D9006AAE6E /* AutoDriveDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoDriveDecorator.h; sourceTree = "<group>"; };
 		B5BA202829FFB5D9006AAE6E /* AutoDriveDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoDriveDecorator.m; sourceTree = "<group>"; };
+		B5BA202B29FFE506006AAE6E /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		B5BA202C29FFE506006AAE6E /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		B5BA202E29FFE54B006AAE6E /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		B5BA202F29FFE54B006AAE6E /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 				B5BA200D29FFB08C006AAE6E /* ViewController.h */,
 				B5BA200E29FFB08C006AAE6E /* ViewController.m */,
 				B5BA202329FFB0CB006AAE6E /* Open_ClosedPrinciple */,
+				B5BA202A29FFE4EB006AAE6E /* LSP */,
 				B5BA201029FFB08C006AAE6E /* Main.storyboard */,
 				B5BA201329FFB08D006AAE6E /* Assets.xcassets */,
 				B5BA201529FFB08D006AAE6E /* LaunchScreen.storyboard */,
@@ -97,6 +104,17 @@
 				B5BA202829FFB5D9006AAE6E /* AutoDriveDecorator.m */,
 			);
 			path = Open_ClosedPrinciple;
+			sourceTree = "<group>";
+		};
+		B5BA202A29FFE4EB006AAE6E /* LSP */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA202B29FFE506006AAE6E /* Animal.h */,
+				B5BA202C29FFE506006AAE6E /* Animal.m */,
+				B5BA202E29FFE54B006AAE6E /* Dog.h */,
+				B5BA202F29FFE54B006AAE6E /* Dog.m */,
+			);
+			path = LSP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,11 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BA203029FFE54B006AAE6E /* Dog.m in Sources */,
 				B5BA202229FFB0C5006AAE6E /* Car.m in Sources */,
 				B5BA200F29FFB08C006AAE6E /* ViewController.m in Sources */,
 				B5BA202929FFB5D9006AAE6E /* AutoDriveDecorator.m in Sources */,
 				B5BA202629FFB1D6006AAE6E /* CarDecorator.m in Sources */,
 				B5BA200929FFB08C006AAE6E /* AppDelegate.m in Sources */,
+				B5BA202D29FFE506006AAE6E /* Animal.m in Sources */,
 				B5BA201A29FFB08D006AAE6E /* main.m in Sources */,
 				B5BA200C29FFB08C006AAE6E /* SceneDelegate.m in Sources */,
 			);
