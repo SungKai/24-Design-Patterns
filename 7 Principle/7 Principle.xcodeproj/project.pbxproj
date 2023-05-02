@@ -23,6 +23,9 @@
 		B5BA203B29FFEEA0006AAE6E /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA203A29FFEEA0006AAE6E /* MyClass.m */; };
 		B5BA203F29FFF54D006AAE6E /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA203E29FFF54D006AAE6E /* Database.m */; };
 		B5BA204329FFFC15006AAE6E /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA204229FFFC15006AAE6E /* UserService.m */; };
+		B5BA20472A00EEAA006AAE6E /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20462A00EEAA006AAE6E /* Goods.m */; };
+		B5BA204A2A00EEB4006AAE6E /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20492A00EEB4006AAE6E /* ShoppingCart.m */; };
+		B5BA204D2A00F087006AAE6E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA204C2A00F087006AAE6E /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,12 @@
 		B5BA204029FFFB61006AAE6E /* DatabaseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseProtocol.h; sourceTree = "<group>"; };
 		B5BA204129FFFC15006AAE6E /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		B5BA204229FFFC15006AAE6E /* UserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
+		B5BA20452A00EEAA006AAE6E /* Goods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Goods.h; sourceTree = "<group>"; };
+		B5BA20462A00EEAA006AAE6E /* Goods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Goods.m; sourceTree = "<group>"; };
+		B5BA20482A00EEB4006AAE6E /* ShoppingCart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
+		B5BA20492A00EEB4006AAE6E /* ShoppingCart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
+		B5BA204B2A00F087006AAE6E /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B5BA204C2A00F087006AAE6E /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +109,7 @@
 				B5BA202A29FFE4EB006AAE6E /* LSP */,
 				B5BA203429FFEDAF006AAE6E /* Dependency Inversion Principle */,
 				B5BA203C29FFF232006AAE6E /* Interface Segregation Principle */,
+				B5BA20442A00EE7F006AAE6E /* LoD */,
 				B5BA201029FFB08C006AAE6E /* Main.storyboard */,
 				B5BA201329FFB08D006AAE6E /* Assets.xcassets */,
 				B5BA201529FFB08D006AAE6E /* LaunchScreen.storyboard */,
@@ -155,6 +165,19 @@
 				B5BA204229FFFC15006AAE6E /* UserService.m */,
 			);
 			path = "Interface Segregation Principle";
+			sourceTree = "<group>";
+		};
+		B5BA20442A00EE7F006AAE6E /* LoD */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20452A00EEAA006AAE6E /* Goods.h */,
+				B5BA20462A00EEAA006AAE6E /* Goods.m */,
+				B5BA20482A00EEB4006AAE6E /* ShoppingCart.h */,
+				B5BA20492A00EEB4006AAE6E /* ShoppingCart.m */,
+				B5BA204B2A00F087006AAE6E /* User.h */,
+				B5BA204C2A00F087006AAE6E /* User.m */,
+			);
+			path = LoD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,12 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BA204D2A00F087006AAE6E /* User.m in Sources */,
 				B5BA203029FFE54B006AAE6E /* Dog.m in Sources */,
 				B5BA202229FFB0C5006AAE6E /* Car.m in Sources */,
 				B5BA200F29FFB08C006AAE6E /* ViewController.m in Sources */,
 				B5BA202929FFB5D9006AAE6E /* AutoDriveDecorator.m in Sources */,
 				B5BA202629FFB1D6006AAE6E /* CarDecorator.m in Sources */,
 				B5BA200929FFB08C006AAE6E /* AppDelegate.m in Sources */,
+				B5BA20472A00EEAA006AAE6E /* Goods.m in Sources */,
 				B5BA204329FFFC15006AAE6E /* UserService.m in Sources */,
 				B5BA202D29FFE506006AAE6E /* Animal.m in Sources */,
 				B5BA203B29FFEEA0006AAE6E /* MyClass.m in Sources */,
@@ -240,6 +265,7 @@
 				B5BA200C29FFB08C006AAE6E /* SceneDelegate.m in Sources */,
 				B5BA203F29FFF54D006AAE6E /* Database.m in Sources */,
 				B5BA203829FFEE47006AAE6E /* Logger.m in Sources */,
+				B5BA204A2A00EEB4006AAE6E /* ShoppingCart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

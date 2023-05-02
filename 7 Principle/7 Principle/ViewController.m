@@ -17,6 +17,8 @@
 #import "Database.h"
 #import "UserService.h"
 
+#import "User.h"
+
 @interface ViewController ()
 
 @end
@@ -67,5 +69,25 @@
     [database disConnect];
 }
 
+// MARK: LoD
+
+- (void)lod {
+    User *user = [[User alloc] init];
+    user.name = @"Kaikai Pike";
+    // apple
+    Goods *apple = [[Goods alloc] init];
+    apple.name = @"apple";
+    apple.price = 5.0;
+    // orange
+    Goods *orange = [[Goods alloc] init];
+    orange.name = @"orange";
+    orange.price = 5.0;
+    
+    // 用户添加商品到购物车
+    [user addGoodsToCart:apple];
+    [user addGoodsToCart:orange];
+    // 结账
+    [user checkOut];
+}
 
 @end
