@@ -34,7 +34,11 @@
 //    [self dependencyInversionPrinciple];
 //    [self interfaceSegregationPrinciple];
 //    [self lod];
-//    [self crp];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self crp];
 }
 
 // MARK: Open/Closed Principle
@@ -100,8 +104,7 @@
 
 - (void)crp {
     ProfileViewController *proVC = [[ProfileViewController alloc] init];
-    [self.navigationController pushViewController:proVC animated:YES];
-
+    [self presentViewController:proVC animated:YES completion:nil];
 }
 
 @end
