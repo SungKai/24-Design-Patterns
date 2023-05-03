@@ -26,6 +26,9 @@
 		B5BA20472A00EEAA006AAE6E /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20462A00EEAA006AAE6E /* Goods.m */; };
 		B5BA204A2A00EEB4006AAE6E /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20492A00EEB4006AAE6E /* ShoppingCart.m */; };
 		B5BA204D2A00F087006AAE6E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA204C2A00F087006AAE6E /* User.m */; };
+		B5BA20622A02424B006AAE6E /* AvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA205C2A02424B006AAE6E /* AvatarView.m */; };
+		B5BA20632A02424B006AAE6E /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA205D2A02424B006AAE6E /* FeedViewController.m */; };
+		B5BA20642A02424B006AAE6E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20612A02424B006AAE6E /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +70,12 @@
 		B5BA20492A00EEB4006AAE6E /* ShoppingCart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
 		B5BA204B2A00F087006AAE6E /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		B5BA204C2A00F087006AAE6E /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B5BA205C2A02424B006AAE6E /* AvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarView.m; sourceTree = "<group>"; };
+		B5BA205D2A02424B006AAE6E /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		B5BA205E2A02424B006AAE6E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		B5BA205F2A02424B006AAE6E /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		B5BA20602A02424B006AAE6E /* AvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarView.h; sourceTree = "<group>"; };
+		B5BA20612A02424B006AAE6E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,8 @@
 				B5BA203429FFEDAF006AAE6E /* Dependency Inversion Principle */,
 				B5BA203C29FFF232006AAE6E /* Interface Segregation Principle */,
 				B5BA20442A00EE7F006AAE6E /* LoD */,
+				B5BA20582A024144006AAE6E /* ProfileViewController */,
+				B5BA205B2A02424B006AAE6E /* CRP */,
 				B5BA201029FFB08C006AAE6E /* Main.storyboard */,
 				B5BA201329FFB08D006AAE6E /* Assets.xcassets */,
 				B5BA201529FFB08D006AAE6E /* LaunchScreen.storyboard */,
@@ -178,6 +189,26 @@
 				B5BA204C2A00F087006AAE6E /* User.m */,
 			);
 			path = LoD;
+			sourceTree = "<group>";
+		};
+		B5BA20582A024144006AAE6E /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		B5BA205B2A02424B006AAE6E /* CRP */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20602A02424B006AAE6E /* AvatarView.h */,
+				B5BA205C2A02424B006AAE6E /* AvatarView.m */,
+				B5BA205E2A02424B006AAE6E /* ProfileViewController.h */,
+				B5BA20612A02424B006AAE6E /* ProfileViewController.m */,
+				B5BA205F2A02424B006AAE6E /* FeedViewController.h */,
+				B5BA205D2A02424B006AAE6E /* FeedViewController.m */,
+			);
+			path = CRP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +284,8 @@
 				B5BA204D2A00F087006AAE6E /* User.m in Sources */,
 				B5BA203029FFE54B006AAE6E /* Dog.m in Sources */,
 				B5BA202229FFB0C5006AAE6E /* Car.m in Sources */,
+				B5BA20642A02424B006AAE6E /* ProfileViewController.m in Sources */,
+				B5BA20622A02424B006AAE6E /* AvatarView.m in Sources */,
 				B5BA200F29FFB08C006AAE6E /* ViewController.m in Sources */,
 				B5BA202929FFB5D9006AAE6E /* AutoDriveDecorator.m in Sources */,
 				B5BA202629FFB1D6006AAE6E /* CarDecorator.m in Sources */,
@@ -265,6 +298,7 @@
 				B5BA200C29FFB08C006AAE6E /* SceneDelegate.m in Sources */,
 				B5BA203F29FFF54D006AAE6E /* Database.m in Sources */,
 				B5BA203829FFEE47006AAE6E /* Logger.m in Sources */,
+				B5BA20632A02424B006AAE6E /* FeedViewController.m in Sources */,
 				B5BA204A2A00EEB4006AAE6E /* ShoppingCart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

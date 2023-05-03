@@ -19,6 +19,8 @@
 
 #import "User.h"
 
+#import "ProfileViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -27,8 +29,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self interfaceSegregationPrinciple];
-    // Do any additional setup after loading the view.
+//    [self open_closedPrinciple];
+//    [self lsp];
+//    [self dependencyInversionPrinciple];
+//    [self interfaceSegregationPrinciple];
+//    [self lod];
+//    [self crp];
 }
 
 // MARK: Open/Closed Principle
@@ -88,6 +94,14 @@
     [user addGoodsToCart:orange];
     // 结账
     [user checkOut];
+}
+
+// MARK: CRP
+
+- (void)crp {
+    ProfileViewController *proVC = [[ProfileViewController alloc] init];
+    [self.navigationController pushViewController:proVC animated:YES];
+
 }
 
 @end
