@@ -18,8 +18,7 @@
 }
 
 - (void)addGoodsToCart:(Goods *)goods {
-    Goods *good = [[Goods alloc] init];
-    [self.shoppingCart addGoodsInfo:good];
+    [self.shoppingCart addGoodsInfo:goods];
 }
 
 - (void)checkOut {
