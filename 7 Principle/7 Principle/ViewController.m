@@ -36,7 +36,7 @@
 //    [self lsp];
 //    [self dependencyInversionPrinciple];
 //    [self interfaceSegregationPrinciple];
-    [self lod];
+//    [self lod];
 //    [self srp];
 }
 
