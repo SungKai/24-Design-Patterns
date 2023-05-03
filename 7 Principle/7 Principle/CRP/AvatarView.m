@@ -25,7 +25,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.imageView.frame = CGRectMake(100, 100, 100, 100);
+    self.imageView.frame = CGRectMake(100, 100, 130, 130);
 }
 
 - (void)handleAvatarTap {

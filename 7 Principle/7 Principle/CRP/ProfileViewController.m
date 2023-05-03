@@ -15,7 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.avatarView = [[AvatarView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    self.avatarView = [[AvatarView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     self.avatarView.avatarTappedBlock = ^{
         NSLog(@"Avatar tapped in ProfileViewController");
     };

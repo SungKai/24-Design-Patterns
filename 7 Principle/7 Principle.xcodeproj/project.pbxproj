@@ -29,6 +29,9 @@
 		B5BA20622A02424B006AAE6E /* AvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA205C2A02424B006AAE6E /* AvatarView.m */; };
 		B5BA20632A02424B006AAE6E /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA205D2A02424B006AAE6E /* FeedViewController.m */; };
 		B5BA20642A02424B006AAE6E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20612A02424B006AAE6E /* ProfileViewController.m */; };
+		B5BA20682A029CC6006AAE6E /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20672A029CC6006AAE6E /* Employee.m */; };
+		B5BA206B2A029D03006AAE6E /* SalaryCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA206A2A029D03006AAE6E /* SalaryCalculator.m */; };
+		B5BA206E2A029D68006AAE6E /* TaskPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA206D2A029D68006AAE6E /* TaskPerformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,12 @@
 		B5BA205F2A02424B006AAE6E /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		B5BA20602A02424B006AAE6E /* AvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarView.h; sourceTree = "<group>"; };
 		B5BA20612A02424B006AAE6E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		B5BA20662A029CC6006AAE6E /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		B5BA20672A029CC6006AAE6E /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		B5BA20692A029D03006AAE6E /* SalaryCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalaryCalculator.h; sourceTree = "<group>"; };
+		B5BA206A2A029D03006AAE6E /* SalaryCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalaryCalculator.m; sourceTree = "<group>"; };
+		B5BA206C2A029D68006AAE6E /* TaskPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskPerformer.h; sourceTree = "<group>"; };
+		B5BA206D2A029D68006AAE6E /* TaskPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskPerformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,7 @@
 				B5BA200D29FFB08C006AAE6E /* ViewController.h */,
 				B5BA200E29FFB08C006AAE6E /* ViewController.m */,
 				B5BA202329FFB0CB006AAE6E /* Open_ClosedPrinciple */,
+				B5BA20652A029C9D006AAE6E /* SRP */,
 				B5BA202A29FFE4EB006AAE6E /* LSP */,
 				B5BA203429FFEDAF006AAE6E /* Dependency Inversion Principle */,
 				B5BA203C29FFF232006AAE6E /* Interface Segregation Principle */,
@@ -211,6 +221,19 @@
 			path = CRP;
 			sourceTree = "<group>";
 		};
+		B5BA20652A029C9D006AAE6E /* SRP */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20662A029CC6006AAE6E /* Employee.h */,
+				B5BA20672A029CC6006AAE6E /* Employee.m */,
+				B5BA20692A029D03006AAE6E /* SalaryCalculator.h */,
+				B5BA206A2A029D03006AAE6E /* SalaryCalculator.m */,
+				B5BA206C2A029D68006AAE6E /* TaskPerformer.h */,
+				B5BA206D2A029D68006AAE6E /* TaskPerformer.m */,
+			);
+			path = SRP;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,13 +305,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5BA204D2A00F087006AAE6E /* User.m in Sources */,
+				B5BA206E2A029D68006AAE6E /* TaskPerformer.m in Sources */,
 				B5BA203029FFE54B006AAE6E /* Dog.m in Sources */,
 				B5BA202229FFB0C5006AAE6E /* Car.m in Sources */,
 				B5BA20642A02424B006AAE6E /* ProfileViewController.m in Sources */,
 				B5BA20622A02424B006AAE6E /* AvatarView.m in Sources */,
+				B5BA20682A029CC6006AAE6E /* Employee.m in Sources */,
 				B5BA200F29FFB08C006AAE6E /* ViewController.m in Sources */,
 				B5BA202929FFB5D9006AAE6E /* AutoDriveDecorator.m in Sources */,
 				B5BA202629FFB1D6006AAE6E /* CarDecorator.m in Sources */,
+				B5BA206B2A029D03006AAE6E /* SalaryCalculator.m in Sources */,
 				B5BA200929FFB08C006AAE6E /* AppDelegate.m in Sources */,
 				B5BA20472A00EEAA006AAE6E /* Goods.m in Sources */,
 				B5BA204329FFFC15006AAE6E /* UserService.m in Sources */,

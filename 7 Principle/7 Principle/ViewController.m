@@ -9,6 +9,9 @@
 
 #import "AutoDriveDecorator.h"
 
+#import "SalaryCalculator.h"
+#import "TaskPerformer.h"
+
 #import "Dog.h"
 
 #import "Logger.h"
@@ -34,11 +37,12 @@
 //    [self dependencyInversionPrinciple];
 //    [self interfaceSegregationPrinciple];
 //    [self lod];
+//    [self srp];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self crp];
+//    [self crp];
 }
 
 // MARK: Open/Closed Principle
@@ -51,6 +55,21 @@
     // 使用装饰器来添加自动驾驶功能
     AutoDriveDecorator *decorator = [[AutoDriveDecorator alloc] initWithCar:car];
     [decorator startEngine];
+}
+
+// MARK: SRP
+
+- (void)srp {
+    Employee *employee = [[Employee alloc] init];
+    employee.name = @"Layton Pike";
+    employee.age = 20;
+    employee.department = @"iOS development department";
+    
+    SalaryCalculator *salaryCalculator = [[SalaryCalculator alloc] init];
+    [salaryCalculator calculateSalaryForEmployee:employee];
+    
+    TaskPerformer *taskPerformer = [[TaskPerformer alloc] init];
+    [taskPerformer performDailyTasksForEmployee:employee];
 }
 
 // MARK: LSP
