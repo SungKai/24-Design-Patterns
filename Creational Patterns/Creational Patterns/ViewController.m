@@ -7,6 +7,8 @@
 
 #import "ViewController.h"
 
+#import "AnimalFactory.h"
+
 @interface ViewController ()
 
 @end
@@ -15,8 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self factoryMethodPattern];
 }
 
+// MARK: Factory Method Pattern
+
+- (void)factoryMethodPattern {
+    Animal *dog = [AnimalFactory creatAnimalWithType:@"dog"];
+    [dog speak];
+    Animal *cat = [AnimalFactory creatAnimalWithType:@"cat"];
+    [cat speak];
+}
 
 @end

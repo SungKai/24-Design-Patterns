@@ -14,6 +14,11 @@
 		B5BA20882A03DEA6006AAE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BA20872A03DEA6006AAE6E /* Assets.xcassets */; };
 		B5BA208B2A03DEA6006AAE6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BA20892A03DEA6006AAE6E /* LaunchScreen.storyboard */; };
 		B5BA208E2A03DEA6006AAE6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA208D2A03DEA6006AAE6E /* main.m */; };
+		B5BA20982A03E25E006AAE6E /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20972A03E25E006AAE6E /* Animal.m */; };
+		B5BA209B2A03E279006AAE6E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA209A2A03E279006AAE6E /* Dog.m */; };
+		B5BA209E2A03E292006AAE6E /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA209D2A03E292006AAE6E /* Cat.m */; };
+		B5BA20A12A03E2A2006AAE6E /* AnimalFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20A02A03E2A2006AAE6E /* AnimalFactory.m */; };
+		B5BA20A52A03ECD2006AAE6E /* NetworkRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20A42A03ECD2006AAE6E /* NetworkRequestFactory.m */; };
 		D15DF9136B22F04111C05750 /* Pods_Creational_Patterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67DD0C3DD8E797D4E46422 /* Pods_Creational_Patterns.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +37,16 @@
 		B5BA208A2A03DEA6006AAE6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5BA208C2A03DEA6006AAE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BA208D2A03DEA6006AAE6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5BA20962A03E25E006AAE6E /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		B5BA20972A03E25E006AAE6E /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		B5BA20992A03E279006AAE6E /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		B5BA209A2A03E279006AAE6E /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		B5BA209C2A03E292006AAE6E /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		B5BA209D2A03E292006AAE6E /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		B5BA209F2A03E2A2006AAE6E /* AnimalFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalFactory.h; sourceTree = "<group>"; };
+		B5BA20A02A03E2A2006AAE6E /* AnimalFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalFactory.m; sourceTree = "<group>"; };
+		B5BA20A32A03ECD2006AAE6E /* NetworkRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequestFactory.h; sourceTree = "<group>"; };
+		B5BA20A42A03ECD2006AAE6E /* NetworkRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestFactory.m; sourceTree = "<group>"; };
 		B91CAE25F8DE1B8C757068EC /* Pods-Creational Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creational Patterns.release.xcconfig"; path = "Target Support Files/Pods-Creational Patterns/Pods-Creational Patterns.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,8 +111,34 @@
 		B5BA20942A03DF2B006AAE6E /* Factory Method Pattern */ = {
 			isa = PBXGroup;
 			children = (
+				B5BA20952A03E251006AAE6E /* Animal */,
+				B5BA20A22A03ECD2006AAE6E /* Network */,
 			);
 			path = "Factory Method Pattern";
+			sourceTree = "<group>";
+		};
+		B5BA20952A03E251006AAE6E /* Animal */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20962A03E25E006AAE6E /* Animal.h */,
+				B5BA20972A03E25E006AAE6E /* Animal.m */,
+				B5BA20992A03E279006AAE6E /* Dog.h */,
+				B5BA209A2A03E279006AAE6E /* Dog.m */,
+				B5BA209C2A03E292006AAE6E /* Cat.h */,
+				B5BA209D2A03E292006AAE6E /* Cat.m */,
+				B5BA209F2A03E2A2006AAE6E /* AnimalFactory.h */,
+				B5BA20A02A03E2A2006AAE6E /* AnimalFactory.m */,
+			);
+			path = Animal;
+			sourceTree = "<group>";
+		};
+		B5BA20A22A03ECD2006AAE6E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20A32A03ECD2006AAE6E /* NetworkRequestFactory.h */,
+				B5BA20A42A03ECD2006AAE6E /* NetworkRequestFactory.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		F8F53352B88E8B4D45DA6E34 /* Frameworks */ = {
@@ -222,9 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BA209B2A03E279006AAE6E /* Dog.m in Sources */,
 				B5BA20832A03DEA4006AAE6E /* ViewController.m in Sources */,
+				B5BA209E2A03E292006AAE6E /* Cat.m in Sources */,
 				B5BA207D2A03DEA4006AAE6E /* AppDelegate.m in Sources */,
+				B5BA20A12A03E2A2006AAE6E /* AnimalFactory.m in Sources */,
+				B5BA20982A03E25E006AAE6E /* Animal.m in Sources */,
 				B5BA208E2A03DEA6006AAE6E /* main.m in Sources */,
+				B5BA20A52A03ECD2006AAE6E /* NetworkRequestFactory.m in Sources */,
 				B5BA20802A03DEA4006AAE6E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
