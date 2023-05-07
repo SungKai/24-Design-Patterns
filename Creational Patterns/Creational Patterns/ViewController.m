@@ -14,6 +14,10 @@
 
 #import "NetworkSingleton.h"
 
+#import "ResumeBuilderProtocol.h"
+#import "ResumeBuilder.h"
+#import "ResumeDirector.h"
+
 @interface ViewController ()
 
 @end
@@ -51,6 +55,15 @@
 
 - (void)singletonPattern {
     NetworkSingleton *networkSingleton = [NetworkSingleton shareManager];
+}
+
+// MARK: Builder Pattern
+
+- (void)builderPattern {
+    id <ResumeBuilderProtocol> builder = [[ResumeBuilder alloc] init];
+    ResumeDirector *director = [[ResumeDirector alloc] initWithBuilder:builder];
+    NSString *str = [director construct];
+    NSLog(@"builderPattern:%@", str);
 }
 
 @end

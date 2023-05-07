@@ -22,6 +22,11 @@
 		B5BA20AA2A0785C4006AAE6E /* iOSFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20A92A0785C4006AAE6E /* iOSFactory.m */; };
 		B5BA20AD2A078791006AAE6E /* AndroidFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20AC2A078791006AAE6E /* AndroidFactory.m */; };
 		B5BA20B12A0792F9006AAE6E /* NetworkSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20B02A0792F9006AAE6E /* NetworkSingleton.m */; };
+		B5BA20B52A07A2B8006AAE6E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20B42A07A2B8006AAE6E /* Person.m */; };
+		B5BA20B82A07A2CF006AAE6E /* Education.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20B72A07A2CF006AAE6E /* Education.m */; };
+		B5BA20BB2A07A2DE006AAE6E /* WorkExperience.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20BA2A07A2DE006AAE6E /* WorkExperience.m */; };
+		B5BA20C22A07A360006AAE6E /* ResumeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20C12A07A360006AAE6E /* ResumeBuilder.m */; };
+		B5BA20C52A07A3F6006AAE6E /* ResumeDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20C42A07A3F6006AAE6E /* ResumeDirector.m */; };
 		D15DF9136B22F04111C05750 /* Pods_Creational_Patterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67DD0C3DD8E797D4E46422 /* Pods_Creational_Patterns.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,17 @@
 		B5BA20AC2A078791006AAE6E /* AndroidFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndroidFactory.m; sourceTree = "<group>"; };
 		B5BA20AF2A0792F9006AAE6E /* NetworkSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkSingleton.h; sourceTree = "<group>"; };
 		B5BA20B02A0792F9006AAE6E /* NetworkSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkSingleton.m; sourceTree = "<group>"; };
+		B5BA20B32A07A2B8006AAE6E /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B5BA20B42A07A2B8006AAE6E /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B5BA20B62A07A2CF006AAE6E /* Education.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Education.h; sourceTree = "<group>"; };
+		B5BA20B72A07A2CF006AAE6E /* Education.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Education.m; sourceTree = "<group>"; };
+		B5BA20B92A07A2DE006AAE6E /* WorkExperience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkExperience.h; sourceTree = "<group>"; };
+		B5BA20BA2A07A2DE006AAE6E /* WorkExperience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkExperience.m; sourceTree = "<group>"; };
+		B5BA20BF2A07A305006AAE6E /* ResumeBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResumeBuilderProtocol.h; sourceTree = "<group>"; };
+		B5BA20C02A07A360006AAE6E /* ResumeBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResumeBuilder.h; sourceTree = "<group>"; };
+		B5BA20C12A07A360006AAE6E /* ResumeBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeBuilder.m; sourceTree = "<group>"; };
+		B5BA20C32A07A3F6006AAE6E /* ResumeDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResumeDirector.h; sourceTree = "<group>"; };
+		B5BA20C42A07A3F6006AAE6E /* ResumeDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeDirector.m; sourceTree = "<group>"; };
 		B91CAE25F8DE1B8C757068EC /* Pods-Creational Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creational Patterns.release.xcconfig"; path = "Target Support Files/Pods-Creational Patterns/Pods-Creational Patterns.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +127,7 @@
 				B5BA20942A03DF2B006AAE6E /* Factory Method Pattern */,
 				B5BA20A62A07852D006AAE6E /* Abstract Factory Pattern */,
 				B5BA20AE2A079293006AAE6E /* Singleton Pattern */,
+				B5BA20B22A07A2A4006AAE6E /* Builder Pattern */,
 				B5BA20842A03DEA4006AAE6E /* Main.storyboard */,
 				B5BA20872A03DEA6006AAE6E /* Assets.xcassets */,
 				B5BA20892A03DEA6006AAE6E /* LaunchScreen.storyboard */,
@@ -172,6 +189,24 @@
 				B5BA20B02A0792F9006AAE6E /* NetworkSingleton.m */,
 			);
 			path = "Singleton Pattern";
+			sourceTree = "<group>";
+		};
+		B5BA20B22A07A2A4006AAE6E /* Builder Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20BF2A07A305006AAE6E /* ResumeBuilderProtocol.h */,
+				B5BA20B32A07A2B8006AAE6E /* Person.h */,
+				B5BA20B42A07A2B8006AAE6E /* Person.m */,
+				B5BA20B62A07A2CF006AAE6E /* Education.h */,
+				B5BA20B72A07A2CF006AAE6E /* Education.m */,
+				B5BA20B92A07A2DE006AAE6E /* WorkExperience.h */,
+				B5BA20BA2A07A2DE006AAE6E /* WorkExperience.m */,
+				B5BA20C02A07A360006AAE6E /* ResumeBuilder.h */,
+				B5BA20C12A07A360006AAE6E /* ResumeBuilder.m */,
+				B5BA20C32A07A3F6006AAE6E /* ResumeDirector.h */,
+				B5BA20C42A07A3F6006AAE6E /* ResumeDirector.m */,
+			);
+			path = "Builder Pattern";
 			sourceTree = "<group>";
 		};
 		F8F53352B88E8B4D45DA6E34 /* Frameworks */ = {
@@ -298,16 +333,21 @@
 			files = (
 				B5BA209B2A03E279006AAE6E /* Dog.m in Sources */,
 				B5BA20832A03DEA4006AAE6E /* ViewController.m in Sources */,
+				B5BA20C22A07A360006AAE6E /* ResumeBuilder.m in Sources */,
 				B5BA20B12A0792F9006AAE6E /* NetworkSingleton.m in Sources */,
+				B5BA20BB2A07A2DE006AAE6E /* WorkExperience.m in Sources */,
 				B5BA20AD2A078791006AAE6E /* AndroidFactory.m in Sources */,
 				B5BA20AA2A0785C4006AAE6E /* iOSFactory.m in Sources */,
 				B5BA209E2A03E292006AAE6E /* Cat.m in Sources */,
+				B5BA20B82A07A2CF006AAE6E /* Education.m in Sources */,
 				B5BA207D2A03DEA4006AAE6E /* AppDelegate.m in Sources */,
 				B5BA20A12A03E2A2006AAE6E /* AnimalFactory.m in Sources */,
 				B5BA20982A03E25E006AAE6E /* Animal.m in Sources */,
+				B5BA20B52A07A2B8006AAE6E /* Person.m in Sources */,
 				B5BA208E2A03DEA6006AAE6E /* main.m in Sources */,
 				B5BA20A52A03ECD2006AAE6E /* NetworkRequestFactory.m in Sources */,
 				B5BA20802A03DEA4006AAE6E /* SceneDelegate.m in Sources */,
+				B5BA20C52A07A3F6006AAE6E /* ResumeDirector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
