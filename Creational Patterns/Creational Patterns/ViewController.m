@@ -12,6 +12,8 @@
 #import "iOSFactory.h"
 #import "AndroidFactory.h"
 
+#import "NetworkSingleton.h"
+
 @interface ViewController ()
 
 @end
@@ -43,6 +45,12 @@
     // 使用Android风格的按钮和标签
     [factory creatButton];
     [factory creatLabel];
+}
+
+// MARK: Singleton Pattern
+
+- (void)singletonPattern {
+    NetworkSingleton *networkSingleton = [NetworkSingleton shareManager];
 }
 
 @end
