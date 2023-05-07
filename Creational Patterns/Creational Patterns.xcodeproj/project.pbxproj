@@ -27,6 +27,13 @@
 		B5BA20BB2A07A2DE006AAE6E /* WorkExperience.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20BA2A07A2DE006AAE6E /* WorkExperience.m */; };
 		B5BA20C22A07A360006AAE6E /* ResumeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20C12A07A360006AAE6E /* ResumeBuilder.m */; };
 		B5BA20C52A07A3F6006AAE6E /* ResumeDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20C42A07A3F6006AAE6E /* ResumeDirector.m */; };
+		B5BA20C92A07D0A5006AAE6E /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20C82A07D0A5006AAE6E /* MyView.m */; };
+		B5BA20CE2A07D7DD006AAE6E /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20CD2A07D7DD006AAE6E /* Product.m */; };
+		B5BA20D12A07D883006AAE6E /* ProductFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20D02A07D883006AAE6E /* ProductFactory.m */; };
+		B5BA20D52A07DC84006AAE6E /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20D42A07DC84006AAE6E /* Character.m */; };
+		B5BA20D82A07DCBE006AAE6E /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20D72A07DCBE006AAE6E /* CharacterBuilder.m */; };
+		B5BA20DD2A07E371006AAE6E /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20DC2A07E371006AAE6E /* NetworkRequest.m */; };
+		B5BA20E02A0813BF006AAE6E /* NetworkRequestCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20DF2A0813BF006AAE6E /* NetworkRequestCache.m */; };
 		D15DF9136B22F04111C05750 /* Pods_Creational_Patterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67DD0C3DD8E797D4E46422 /* Pods_Creational_Patterns.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +80,21 @@
 		B5BA20C12A07A360006AAE6E /* ResumeBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeBuilder.m; sourceTree = "<group>"; };
 		B5BA20C32A07A3F6006AAE6E /* ResumeDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResumeDirector.h; sourceTree = "<group>"; };
 		B5BA20C42A07A3F6006AAE6E /* ResumeDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeDirector.m; sourceTree = "<group>"; };
+		B5BA20C72A07D0A5006AAE6E /* MyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		B5BA20C82A07D0A5006AAE6E /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		B5BA20CC2A07D7DD006AAE6E /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		B5BA20CD2A07D7DD006AAE6E /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		B5BA20CF2A07D883006AAE6E /* ProductFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFactory.h; sourceTree = "<group>"; };
+		B5BA20D02A07D883006AAE6E /* ProductFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductFactory.m; sourceTree = "<group>"; };
+		B5BA20D32A07DC84006AAE6E /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		B5BA20D42A07DC84006AAE6E /* Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		B5BA20D62A07DCBE006AAE6E /* CharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterBuilder.h; sourceTree = "<group>"; };
+		B5BA20D72A07DCBE006AAE6E /* CharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
+		B5BA20D92A07DCE8006AAE6E /* CharacterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterProtocol.h; sourceTree = "<group>"; };
+		B5BA20DB2A07E371006AAE6E /* NetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
+		B5BA20DC2A07E371006AAE6E /* NetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
+		B5BA20DE2A0813BF006AAE6E /* NetworkRequestCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequestCache.h; sourceTree = "<group>"; };
+		B5BA20DF2A0813BF006AAE6E /* NetworkRequestCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestCache.m; sourceTree = "<group>"; };
 		B91CAE25F8DE1B8C757068EC /* Pods-Creational Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creational Patterns.release.xcconfig"; path = "Target Support Files/Pods-Creational Patterns/Pods-Creational Patterns.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +150,7 @@
 				B5BA20A62A07852D006AAE6E /* Abstract Factory Pattern */,
 				B5BA20AE2A079293006AAE6E /* Singleton Pattern */,
 				B5BA20B22A07A2A4006AAE6E /* Builder Pattern */,
+				B5BA20C62A07D078006AAE6E /* Prototype Pattern */,
 				B5BA20842A03DEA4006AAE6E /* Main.storyboard */,
 				B5BA20872A03DEA6006AAE6E /* Assets.xcassets */,
 				B5BA20892A03DEA6006AAE6E /* LaunchScreen.storyboard */,
@@ -207,6 +230,60 @@
 				B5BA20C42A07A3F6006AAE6E /* ResumeDirector.m */,
 			);
 			path = "Builder Pattern";
+			sourceTree = "<group>";
+		};
+		B5BA20C62A07D078006AAE6E /* Prototype Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20CA2A07D7B5006AAE6E /* View */,
+				B5BA20CB2A07D7C0006AAE6E /* Factory */,
+				B5BA20D22A07DC75006AAE6E /* Builder */,
+				B5BA20DA2A07E363006AAE6E /* NetworkRequest */,
+			);
+			path = "Prototype Pattern";
+			sourceTree = "<group>";
+		};
+		B5BA20CA2A07D7B5006AAE6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20C72A07D0A5006AAE6E /* MyView.h */,
+				B5BA20C82A07D0A5006AAE6E /* MyView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5BA20CB2A07D7C0006AAE6E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20CC2A07D7DD006AAE6E /* Product.h */,
+				B5BA20CD2A07D7DD006AAE6E /* Product.m */,
+				B5BA20CF2A07D883006AAE6E /* ProductFactory.h */,
+				B5BA20D02A07D883006AAE6E /* ProductFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B5BA20D22A07DC75006AAE6E /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20D92A07DCE8006AAE6E /* CharacterProtocol.h */,
+				B5BA20D32A07DC84006AAE6E /* Character.h */,
+				B5BA20D42A07DC84006AAE6E /* Character.m */,
+				B5BA20D62A07DCBE006AAE6E /* CharacterBuilder.h */,
+				B5BA20D72A07DCBE006AAE6E /* CharacterBuilder.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		B5BA20DA2A07E363006AAE6E /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20DB2A07E371006AAE6E /* NetworkRequest.h */,
+				B5BA20DC2A07E371006AAE6E /* NetworkRequest.m */,
+				B5BA20DE2A0813BF006AAE6E /* NetworkRequestCache.h */,
+				B5BA20DF2A0813BF006AAE6E /* NetworkRequestCache.m */,
+			);
+			path = NetworkRequest;
 			sourceTree = "<group>";
 		};
 		F8F53352B88E8B4D45DA6E34 /* Frameworks */ = {
@@ -333,10 +410,16 @@
 			files = (
 				B5BA209B2A03E279006AAE6E /* Dog.m in Sources */,
 				B5BA20832A03DEA4006AAE6E /* ViewController.m in Sources */,
+				B5BA20DD2A07E371006AAE6E /* NetworkRequest.m in Sources */,
+				B5BA20CE2A07D7DD006AAE6E /* Product.m in Sources */,
+				B5BA20C92A07D0A5006AAE6E /* MyView.m in Sources */,
 				B5BA20C22A07A360006AAE6E /* ResumeBuilder.m in Sources */,
 				B5BA20B12A0792F9006AAE6E /* NetworkSingleton.m in Sources */,
 				B5BA20BB2A07A2DE006AAE6E /* WorkExperience.m in Sources */,
 				B5BA20AD2A078791006AAE6E /* AndroidFactory.m in Sources */,
+				B5BA20D52A07DC84006AAE6E /* Character.m in Sources */,
+				B5BA20D82A07DCBE006AAE6E /* CharacterBuilder.m in Sources */,
+				B5BA20D12A07D883006AAE6E /* ProductFactory.m in Sources */,
 				B5BA20AA2A0785C4006AAE6E /* iOSFactory.m in Sources */,
 				B5BA209E2A03E292006AAE6E /* Cat.m in Sources */,
 				B5BA20B82A07A2CF006AAE6E /* Education.m in Sources */,
@@ -348,6 +431,7 @@
 				B5BA20A52A03ECD2006AAE6E /* NetworkRequestFactory.m in Sources */,
 				B5BA20802A03DEA4006AAE6E /* SceneDelegate.m in Sources */,
 				B5BA20C52A07A3F6006AAE6E /* ResumeDirector.m in Sources */,
+				B5BA20E02A0813BF006AAE6E /* NetworkRequestCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
