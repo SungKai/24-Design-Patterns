@@ -19,6 +19,8 @@
 		B5BA209E2A03E292006AAE6E /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA209D2A03E292006AAE6E /* Cat.m */; };
 		B5BA20A12A03E2A2006AAE6E /* AnimalFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20A02A03E2A2006AAE6E /* AnimalFactory.m */; };
 		B5BA20A52A03ECD2006AAE6E /* NetworkRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20A42A03ECD2006AAE6E /* NetworkRequestFactory.m */; };
+		B5BA20AA2A0785C4006AAE6E /* iOSFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20A92A0785C4006AAE6E /* iOSFactory.m */; };
+		B5BA20AD2A078791006AAE6E /* AndroidFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20AC2A078791006AAE6E /* AndroidFactory.m */; };
 		D15DF9136B22F04111C05750 /* Pods_Creational_Patterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67DD0C3DD8E797D4E46422 /* Pods_Creational_Patterns.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,11 @@
 		B5BA20A02A03E2A2006AAE6E /* AnimalFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalFactory.m; sourceTree = "<group>"; };
 		B5BA20A32A03ECD2006AAE6E /* NetworkRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequestFactory.h; sourceTree = "<group>"; };
 		B5BA20A42A03ECD2006AAE6E /* NetworkRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestFactory.m; sourceTree = "<group>"; };
+		B5BA20A72A078551006AAE6E /* AbstractFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactoryProtocol.h; sourceTree = "<group>"; };
+		B5BA20A82A0785C4006AAE6E /* iOSFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSFactory.h; sourceTree = "<group>"; };
+		B5BA20A92A0785C4006AAE6E /* iOSFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSFactory.m; sourceTree = "<group>"; };
+		B5BA20AB2A078791006AAE6E /* AndroidFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndroidFactory.h; sourceTree = "<group>"; };
+		B5BA20AC2A078791006AAE6E /* AndroidFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndroidFactory.m; sourceTree = "<group>"; };
 		B91CAE25F8DE1B8C757068EC /* Pods-Creational Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creational Patterns.release.xcconfig"; path = "Target Support Files/Pods-Creational Patterns/Pods-Creational Patterns.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +106,7 @@
 				B5BA20812A03DEA4006AAE6E /* ViewController.h */,
 				B5BA20822A03DEA4006AAE6E /* ViewController.m */,
 				B5BA20942A03DF2B006AAE6E /* Factory Method Pattern */,
+				B5BA20A62A07852D006AAE6E /* Abstract Factory Pattern */,
 				B5BA20842A03DEA4006AAE6E /* Main.storyboard */,
 				B5BA20872A03DEA6006AAE6E /* Assets.xcassets */,
 				B5BA20892A03DEA6006AAE6E /* LaunchScreen.storyboard */,
@@ -139,6 +147,18 @@
 				B5BA20A42A03ECD2006AAE6E /* NetworkRequestFactory.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		B5BA20A62A07852D006AAE6E /* Abstract Factory Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA20A72A078551006AAE6E /* AbstractFactoryProtocol.h */,
+				B5BA20A82A0785C4006AAE6E /* iOSFactory.h */,
+				B5BA20A92A0785C4006AAE6E /* iOSFactory.m */,
+				B5BA20AB2A078791006AAE6E /* AndroidFactory.h */,
+				B5BA20AC2A078791006AAE6E /* AndroidFactory.m */,
+			);
+			path = "Abstract Factory Pattern";
 			sourceTree = "<group>";
 		};
 		F8F53352B88E8B4D45DA6E34 /* Frameworks */ = {
@@ -265,6 +285,8 @@
 			files = (
 				B5BA209B2A03E279006AAE6E /* Dog.m in Sources */,
 				B5BA20832A03DEA4006AAE6E /* ViewController.m in Sources */,
+				B5BA20AD2A078791006AAE6E /* AndroidFactory.m in Sources */,
+				B5BA20AA2A0785C4006AAE6E /* iOSFactory.m in Sources */,
 				B5BA209E2A03E292006AAE6E /* Cat.m in Sources */,
 				B5BA207D2A03DEA4006AAE6E /* AppDelegate.m in Sources */,
 				B5BA20A12A03E2A2006AAE6E /* AnimalFactory.m in Sources */,

@@ -9,6 +9,9 @@
 
 #import "AnimalFactory.h"
 
+#import "iOSFactory.h"
+#import "AndroidFactory.h"
+
 @interface ViewController ()
 
 @end
@@ -27,6 +30,19 @@
     [dog speak];
     Animal *cat = [AnimalFactory creatAnimalWithType:@"cat"];
     [cat speak];
+}
+
+
+// MARK: Abstract Factory Pattern
+
+- (void)abstractFactoryPattern {
+    id <AbstractFactoryProtocol> factory = [[iOSFactory alloc] init];
+    // 使用iOS风格的按钮和标签
+    [factory creatButton];
+    [factory creatLabel];
+    // 使用Android风格的按钮和标签
+    [factory creatButton];
+    [factory creatLabel];
 }
 
 @end
