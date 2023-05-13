@@ -34,6 +34,7 @@
 		B5BA20D82A07DCBE006AAE6E /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20D72A07DCBE006AAE6E /* CharacterBuilder.m */; };
 		B5BA20DD2A07E371006AAE6E /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20DC2A07E371006AAE6E /* NetworkRequest.m */; };
 		B5BA20E02A0813BF006AAE6E /* NetworkRequestCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20DF2A0813BF006AAE6E /* NetworkRequestCache.m */; };
+		B5C4B15A2A0FD12200E14DAD /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B1592A0FD12200E14DAD /* NetworkManager.m */; };
 		D15DF9136B22F04111C05750 /* Pods_Creational_Patterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67DD0C3DD8E797D4E46422 /* Pods_Creational_Patterns.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		B5BA20DC2A07E371006AAE6E /* NetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
 		B5BA20DE2A0813BF006AAE6E /* NetworkRequestCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequestCache.h; sourceTree = "<group>"; };
 		B5BA20DF2A0813BF006AAE6E /* NetworkRequestCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestCache.m; sourceTree = "<group>"; };
+		B5C4B1582A0FD12200E14DAD /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		B5C4B1592A0FD12200E14DAD /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		B91CAE25F8DE1B8C757068EC /* Pods-Creational Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creational Patterns.release.xcconfig"; path = "Target Support Files/Pods-Creational Patterns/Pods-Creational Patterns.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +192,8 @@
 			children = (
 				B5BA20A32A03ECD2006AAE6E /* NetworkRequestFactory.h */,
 				B5BA20A42A03ECD2006AAE6E /* NetworkRequestFactory.m */,
+				B5C4B1582A0FD12200E14DAD /* NetworkManager.h */,
+				B5C4B1592A0FD12200E14DAD /* NetworkManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 				B5BA20A52A03ECD2006AAE6E /* NetworkRequestFactory.m in Sources */,
 				B5BA20802A03DEA4006AAE6E /* SceneDelegate.m in Sources */,
 				B5BA20C52A07A3F6006AAE6E /* ResumeDirector.m in Sources */,
+				B5C4B15A2A0FD12200E14DAD /* NetworkManager.m in Sources */,
 				B5BA20E02A0813BF006AAE6E /* NetworkRequestCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

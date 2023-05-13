@@ -8,6 +8,8 @@
 #import "ViewController.h"
 
 #import "AnimalFactory.h"
+#import "NetworkRequestFactory.h"
+#import "NetworkManager.h"
 
 #import "iOSFactory.h"
 #import "AndroidFactory.h"
@@ -36,15 +38,31 @@
 //    [self prototypePattern_Builder];
 }
 
-// MARK: Factory Method Pattern
+// MARK: Factory Method Pattern_Animal
 
-- (void)factoryMethodPattern {
+- (void)factoryMethodPattern_Animal {
     Animal *dog = [AnimalFactory creatAnimalWithType:@"dog"];
     [dog speak];
     Animal *cat = [AnimalFactory creatAnimalWithType:@"cat"];
     [cat speak];
 }
 
+// MARK: Factory Method Pattern_Network
+
+- (void)factoryMethodPattern_Network {
+    NetworkManager *networkManager = [NetworkRequestFactory creatNetworkManager];
+    [networkManager
+     requestURL:@"http://example.com/api"
+     type:NetworkManagerRequestTypeGet
+     parameters:nil
+     progress:nil
+     success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    }
+     failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        
+    }];
+}
 
 // MARK: Abstract Factory Pattern
 
