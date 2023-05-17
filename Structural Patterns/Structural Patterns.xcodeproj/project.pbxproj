@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AC3EA3170F74F3700D4AB237 /* Pods_Structural_Patterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE78ECF678A03DC23A916AD /* Pods_Structural_Patterns.framework */; };
+		B55DE3682A14E8E400BB2531 /* ConcreteImplementorA.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3672A14E8E400BB2531 /* ConcreteImplementorA.m */; };
+		B55DE36B2A14E90E00BB2531 /* ConcreteImplementorB.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE36A2A14E90E00BB2531 /* ConcreteImplementorB.m */; };
+		B55DE3702A14EA9300BB2531 /* Abstraction.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE36F2A14EA9300BB2531 /* Abstraction.m */; };
+		B55DE3752A14EEC600BB2531 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3742A14EEC600BB2531 /* HTTPRequest.m */; };
+		B55DE3782A14EF3500BB2531 /* WebSocketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3772A14EF3500BB2531 /* WebSocketRequest.m */; };
+		B55DE37D2A14EFAC00BB2531 /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE37C2A14EFAC00BB2531 /* NetworkClient.m */; };
+		B55DE3832A14F46900BB2531 /* LightThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3822A14F46900BB2531 /* LightThemeStyle.m */; };
+		B55DE3862A14F4C800BB2531 /* DarkThemeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3852A14F4C800BB2531 /* DarkThemeStyle.m */; };
+		B55DE38D2A14F54A00BB2531 /* ViewStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE38C2A14F54A00BB2531 /* ViewStyleViewController.m */; };
 		B5C4B1692A1106BB00E14DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B1682A1106BB00E14DAD /* AppDelegate.m */; };
 		B5C4B16C2A1106BB00E14DAD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B16B2A1106BB00E14DAD /* SceneDelegate.m */; };
 		B5C4B16F2A1106BB00E14DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B16E2A1106BB00E14DAD /* ViewController.m */; };
@@ -23,6 +32,27 @@
 /* Begin PBXFileReference section */
 		8BCEE4E9D94B8C1F1FF50E69 /* Pods-Structural Patterns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Structural Patterns.debug.xcconfig"; path = "Target Support Files/Pods-Structural Patterns/Pods-Structural Patterns.debug.xcconfig"; sourceTree = "<group>"; };
 		A456DCE63125E61E688E3966 /* Pods-Structural Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Structural Patterns.release.xcconfig"; path = "Target Support Files/Pods-Structural Patterns/Pods-Structural Patterns.release.xcconfig"; sourceTree = "<group>"; };
+		B55DE3652A14E8A700BB2531 /* Implementor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Implementor.h; sourceTree = "<group>"; };
+		B55DE3662A14E8E400BB2531 /* ConcreteImplementorA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteImplementorA.h; sourceTree = "<group>"; };
+		B55DE3672A14E8E400BB2531 /* ConcreteImplementorA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteImplementorA.m; sourceTree = "<group>"; };
+		B55DE3692A14E90E00BB2531 /* ConcreteImplementorB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteImplementorB.h; sourceTree = "<group>"; };
+		B55DE36A2A14E90E00BB2531 /* ConcreteImplementorB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteImplementorB.m; sourceTree = "<group>"; };
+		B55DE36E2A14EA9300BB2531 /* Abstraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Abstraction.h; sourceTree = "<group>"; };
+		B55DE36F2A14EA9300BB2531 /* Abstraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Abstraction.m; sourceTree = "<group>"; };
+		B55DE3722A14EEB100BB2531 /* NetworkRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequestProtocol.h; sourceTree = "<group>"; };
+		B55DE3732A14EEC600BB2531 /* HTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		B55DE3742A14EEC600BB2531 /* HTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		B55DE3762A14EF3500BB2531 /* WebSocketRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebSocketRequest.h; sourceTree = "<group>"; };
+		B55DE3772A14EF3500BB2531 /* WebSocketRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocketRequest.m; sourceTree = "<group>"; };
+		B55DE37B2A14EFAC00BB2531 /* NetworkClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
+		B55DE37C2A14EFAC00BB2531 /* NetworkClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkClient.m; sourceTree = "<group>"; };
+		B55DE37F2A14F42A00BB2531 /* ViewStyleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewStyleProtocol.h; sourceTree = "<group>"; };
+		B55DE3812A14F46900BB2531 /* LightThemeStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightThemeStyle.h; sourceTree = "<group>"; };
+		B55DE3822A14F46900BB2531 /* LightThemeStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightThemeStyle.m; sourceTree = "<group>"; };
+		B55DE3842A14F4C800BB2531 /* DarkThemeStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DarkThemeStyle.h; sourceTree = "<group>"; };
+		B55DE3852A14F4C800BB2531 /* DarkThemeStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarkThemeStyle.m; sourceTree = "<group>"; };
+		B55DE38B2A14F54A00BB2531 /* ViewStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewStyleViewController.h; sourceTree = "<group>"; };
+		B55DE38C2A14F54A00BB2531 /* ViewStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewStyleViewController.m; sourceTree = "<group>"; };
 		B5C4B1642A1106BB00E14DAD /* Structural Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Structural Patterns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C4B1672A1106BB00E14DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5C4B1682A1106BB00E14DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +104,106 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B55DE3632A14E84600BB2531 /* Bridge Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3642A14E88500BB2531 /* Simple */,
+				B55DE3712A14EE9000BB2531 /* NetworkBridege */,
+				B55DE37E2A14F41600BB2531 /* ViewStyle */,
+			);
+			path = "Bridge Pattern";
+			sourceTree = "<group>";
+		};
+		B55DE3642A14E88500BB2531 /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3652A14E8A700BB2531 /* Implementor.h */,
+				B55DE36C2A14E94200BB2531 /* Implementor */,
+				B55DE36D2A14E94E00BB2531 /* Abstraction */,
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		B55DE36C2A14E94200BB2531 /* Implementor */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3662A14E8E400BB2531 /* ConcreteImplementorA.h */,
+				B55DE3672A14E8E400BB2531 /* ConcreteImplementorA.m */,
+				B55DE3692A14E90E00BB2531 /* ConcreteImplementorB.h */,
+				B55DE36A2A14E90E00BB2531 /* ConcreteImplementorB.m */,
+			);
+			path = Implementor;
+			sourceTree = "<group>";
+		};
+		B55DE36D2A14E94E00BB2531 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE36E2A14EA9300BB2531 /* Abstraction.h */,
+				B55DE36F2A14EA9300BB2531 /* Abstraction.m */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		B55DE3712A14EE9000BB2531 /* NetworkBridege */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3722A14EEB100BB2531 /* NetworkRequestProtocol.h */,
+				B55DE3792A14EF6800BB2531 /* Implementor */,
+				B55DE37A2A14EF8500BB2531 /* Abstraction */,
+			);
+			path = NetworkBridege;
+			sourceTree = "<group>";
+		};
+		B55DE3792A14EF6800BB2531 /* Implementor */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3732A14EEC600BB2531 /* HTTPRequest.h */,
+				B55DE3742A14EEC600BB2531 /* HTTPRequest.m */,
+				B55DE3762A14EF3500BB2531 /* WebSocketRequest.h */,
+				B55DE3772A14EF3500BB2531 /* WebSocketRequest.m */,
+			);
+			path = Implementor;
+			sourceTree = "<group>";
+		};
+		B55DE37A2A14EF8500BB2531 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE37B2A14EFAC00BB2531 /* NetworkClient.h */,
+				B55DE37C2A14EFAC00BB2531 /* NetworkClient.m */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		B55DE37E2A14F41600BB2531 /* ViewStyle */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE37F2A14F42A00BB2531 /* ViewStyleProtocol.h */,
+				B55DE3802A14F43800BB2531 /* Implementor */,
+				B55DE38A2A14F51F00BB2531 /* Abstraction */,
+			);
+			path = ViewStyle;
+			sourceTree = "<group>";
+		};
+		B55DE3802A14F43800BB2531 /* Implementor */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3812A14F46900BB2531 /* LightThemeStyle.h */,
+				B55DE3822A14F46900BB2531 /* LightThemeStyle.m */,
+				B55DE3842A14F4C800BB2531 /* DarkThemeStyle.h */,
+				B55DE3852A14F4C800BB2531 /* DarkThemeStyle.m */,
+			);
+			path = Implementor;
+			sourceTree = "<group>";
+		};
+		B55DE38A2A14F51F00BB2531 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE38B2A14F54A00BB2531 /* ViewStyleViewController.h */,
+				B55DE38C2A14F54A00BB2531 /* ViewStyleViewController.m */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
 		B5C4B15B2A1106BB00E14DAD = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +232,7 @@
 				B5C4B16D2A1106BB00E14DAD /* ViewController.h */,
 				B5C4B16E2A1106BB00E14DAD /* ViewController.m */,
 				B5C4B1802A11072E00E14DAD /* Adapter Pattern */,
+				B55DE3632A14E84600BB2531 /* Bridge Pattern */,
 				B5C4B1702A1106BB00E14DAD /* Main.storyboard */,
 				B5C4B1732A1106BC00E14DAD /* Assets.xcassets */,
 				B5C4B1752A1106BC00E14DAD /* LaunchScreen.storyboard */,
@@ -255,13 +386,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55DE3832A14F46900BB2531 /* LightThemeStyle.m in Sources */,
 				B5C4B1832A11075E00E14DAD /* OldAPI.m in Sources */,
+				B55DE3782A14EF3500BB2531 /* WebSocketRequest.m in Sources */,
+				B55DE3682A14E8E400BB2531 /* ConcreteImplementorA.m in Sources */,
 				B5C4B16F2A1106BB00E14DAD /* ViewController.m in Sources */,
 				B5C4B1692A1106BB00E14DAD /* AppDelegate.m in Sources */,
+				B55DE3702A14EA9300BB2531 /* Abstraction.m in Sources */,
+				B55DE3752A14EEC600BB2531 /* HTTPRequest.m in Sources */,
 				B5C4B18A2A11082E00E14DAD /* GeneralizationAdapter.m in Sources */,
+				B55DE36B2A14E90E00BB2531 /* ConcreteImplementorB.m in Sources */,
 				B5C4B17A2A1106BC00E14DAD /* main.m in Sources */,
 				B5C4B16C2A1106BB00E14DAD /* SceneDelegate.m in Sources */,
 				B5C4B18F2A110B3000E14DAD /* DependencyAdapter.m in Sources */,
+				B55DE3862A14F4C800BB2531 /* DarkThemeStyle.m in Sources */,
+				B55DE37D2A14EFAC00BB2531 /* NetworkClient.m in Sources */,
+				B55DE38D2A14F54A00BB2531 /* ViewStyleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

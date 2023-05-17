@@ -11,6 +11,9 @@
 #import "NetworkRequestFactory.h"
 #import "NetworkManager.h"
 
+#import "ShapeFactoryProtocol.h"
+#import "CircleFactory.h"
+
 #import "iOSFactory.h"
 #import "AndroidFactory.h"
 
@@ -34,22 +37,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self factoryMethodPattern];
+    [self factoryMethodPattern];
 //    [self prototypePattern_Builder];
 }
 
-// MARK: Factory Method Pattern_Animal
+// MARK: Simple Factory Pattern_Animal
 
-- (void)factoryMethodPattern_Animal {
+- (void)simpleFactoryPattern_Animal {
     Animal *dog = [AnimalFactory creatAnimalWithType:@"dog"];
     [dog speak];
     Animal *cat = [AnimalFactory creatAnimalWithType:@"cat"];
     [cat speak];
 }
 
-// MARK: Factory Method Pattern_Network
+// MARK: Simple Factory Pattern_Network
 
-- (void)factoryMethodPattern_Network {
+- (void)simpleFactoryPattern_Network {
     NetworkManager *networkManager = [NetworkRequestFactory creatNetworkManager];
     [networkManager
      requestURL:@"http://example.com/api"
@@ -62,6 +65,14 @@
      failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         
     }];
+}
+
+// MARK: Factory Method Pattern
+
+- (void)factoryMethodPattern {
+    id <ShapeFactoryProtocol> factory = [[CircleFactory alloc] init];
+    id <ShapeProtocol> shape = [factory creatShape];
+    [shape draw];
 }
 
 // MARK: Abstract Factory Pattern

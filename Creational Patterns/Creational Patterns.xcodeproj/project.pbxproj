@@ -35,6 +35,10 @@
 		B5BA20DD2A07E371006AAE6E /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20DC2A07E371006AAE6E /* NetworkRequest.m */; };
 		B5BA20E02A0813BF006AAE6E /* NetworkRequestCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA20DF2A0813BF006AAE6E /* NetworkRequestCache.m */; };
 		B5C4B15A2A0FD12200E14DAD /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B1592A0FD12200E14DAD /* NetworkManager.m */; };
+		B5C4B1942A12842600E14DAD /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B1932A12842600E14DAD /* Circle.m */; };
+		B5C4B1972A12846200E14DAD /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B1962A12846200E14DAD /* Rectangle.m */; };
+		B5C4B19B2A12857B00E14DAD /* CircleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B19A2A12857B00E14DAD /* CircleFactory.m */; };
+		B5C4B19E2A1285D800E14DAD /* RectangleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B19D2A1285D800E14DAD /* RectangleFactory.m */; };
 		D15DF9136B22F04111C05750 /* Pods_Creational_Patterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67DD0C3DD8E797D4E46422 /* Pods_Creational_Patterns.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +102,16 @@
 		B5BA20DF2A0813BF006AAE6E /* NetworkRequestCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestCache.m; sourceTree = "<group>"; };
 		B5C4B1582A0FD12200E14DAD /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		B5C4B1592A0FD12200E14DAD /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		B5C4B1912A12840300E14DAD /* ShapeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeProtocol.h; sourceTree = "<group>"; };
+		B5C4B1922A12842600E14DAD /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		B5C4B1932A12842600E14DAD /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		B5C4B1952A12846200E14DAD /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		B5C4B1962A12846200E14DAD /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		B5C4B1982A1284EC00E14DAD /* ShapeFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeFactoryProtocol.h; sourceTree = "<group>"; };
+		B5C4B1992A12857B00E14DAD /* CircleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleFactory.h; sourceTree = "<group>"; };
+		B5C4B19A2A12857B00E14DAD /* CircleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleFactory.m; sourceTree = "<group>"; };
+		B5C4B19C2A1285D800E14DAD /* RectangleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectangleFactory.h; sourceTree = "<group>"; };
+		B5C4B19D2A1285D800E14DAD /* RectangleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectangleFactory.m; sourceTree = "<group>"; };
 		B91CAE25F8DE1B8C757068EC /* Pods-Creational Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creational Patterns.release.xcconfig"; path = "Target Support Files/Pods-Creational Patterns/Pods-Creational Patterns.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +163,8 @@
 				B5BA207F2A03DEA4006AAE6E /* SceneDelegate.m */,
 				B5BA20812A03DEA4006AAE6E /* ViewController.h */,
 				B5BA20822A03DEA4006AAE6E /* ViewController.m */,
-				B5BA20942A03DF2B006AAE6E /* Factory Method Pattern */,
+				B5BA20942A03DF2B006AAE6E /* Simple Factory Pattern */,
+				B5C4B1902A1282B600E14DAD /* Factory Method Pattern */,
 				B5BA20A62A07852D006AAE6E /* Abstract Factory Pattern */,
 				B5BA20AE2A079293006AAE6E /* Singleton Pattern */,
 				B5BA20B22A07A2A4006AAE6E /* Builder Pattern */,
@@ -163,13 +178,13 @@
 			path = "Creational Patterns";
 			sourceTree = "<group>";
 		};
-		B5BA20942A03DF2B006AAE6E /* Factory Method Pattern */ = {
+		B5BA20942A03DF2B006AAE6E /* Simple Factory Pattern */ = {
 			isa = PBXGroup;
 			children = (
 				B5BA20952A03E251006AAE6E /* Animal */,
 				B5BA20A22A03ECD2006AAE6E /* Network */,
 			);
-			path = "Factory Method Pattern";
+			path = "Simple Factory Pattern";
 			sourceTree = "<group>";
 		};
 		B5BA20952A03E251006AAE6E /* Animal */ = {
@@ -289,6 +304,23 @@
 				B5BA20DF2A0813BF006AAE6E /* NetworkRequestCache.m */,
 			);
 			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		B5C4B1902A1282B600E14DAD /* Factory Method Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B5C4B1912A12840300E14DAD /* ShapeProtocol.h */,
+				B5C4B1922A12842600E14DAD /* Circle.h */,
+				B5C4B1932A12842600E14DAD /* Circle.m */,
+				B5C4B1952A12846200E14DAD /* Rectangle.h */,
+				B5C4B1962A12846200E14DAD /* Rectangle.m */,
+				B5C4B1982A1284EC00E14DAD /* ShapeFactoryProtocol.h */,
+				B5C4B1992A12857B00E14DAD /* CircleFactory.h */,
+				B5C4B19A2A12857B00E14DAD /* CircleFactory.m */,
+				B5C4B19C2A1285D800E14DAD /* RectangleFactory.h */,
+				B5C4B19D2A1285D800E14DAD /* RectangleFactory.m */,
+			);
+			path = "Factory Method Pattern";
 			sourceTree = "<group>";
 		};
 		F8F53352B88E8B4D45DA6E34 /* Frameworks */ = {
@@ -416,13 +448,17 @@
 				B5BA209B2A03E279006AAE6E /* Dog.m in Sources */,
 				B5BA20832A03DEA4006AAE6E /* ViewController.m in Sources */,
 				B5BA20DD2A07E371006AAE6E /* NetworkRequest.m in Sources */,
+				B5C4B19E2A1285D800E14DAD /* RectangleFactory.m in Sources */,
 				B5BA20CE2A07D7DD006AAE6E /* Product.m in Sources */,
+				B5C4B19B2A12857B00E14DAD /* CircleFactory.m in Sources */,
 				B5BA20C92A07D0A5006AAE6E /* MyView.m in Sources */,
+				B5C4B1942A12842600E14DAD /* Circle.m in Sources */,
 				B5BA20C22A07A360006AAE6E /* ResumeBuilder.m in Sources */,
 				B5BA20B12A0792F9006AAE6E /* NetworkSingleton.m in Sources */,
 				B5BA20BB2A07A2DE006AAE6E /* WorkExperience.m in Sources */,
 				B5BA20AD2A078791006AAE6E /* AndroidFactory.m in Sources */,
 				B5BA20D52A07DC84006AAE6E /* Character.m in Sources */,
+				B5C4B1972A12846200E14DAD /* Rectangle.m in Sources */,
 				B5BA20D82A07DCBE006AAE6E /* CharacterBuilder.m in Sources */,
 				B5BA20D12A07D883006AAE6E /* ProductFactory.m in Sources */,
 				B5BA20AA2A0785C4006AAE6E /* iOSFactory.m in Sources */,
