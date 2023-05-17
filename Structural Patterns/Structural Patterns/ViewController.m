@@ -20,6 +20,8 @@
 #import "DarkThemeStyle.h"
 #import "ViewStyleViewController.h"
 
+#import "File.h"
+#import "Directory.h"
 
 @interface ViewController ()
 
@@ -31,7 +33,8 @@
     [super viewDidLoad];
 //    [self adapterPattern_Generalization];
 //    [self adapterPattern_Dependency];
-    [self bridgePattern_Simple];
+//    [self bridgePattern_Simple];
+    [self compositePattern];
 }
 
 // MARK: Adapter Pattern
@@ -93,4 +96,39 @@
     label.text = @"Hello, Bridge Pattern!";
     [viewController.view addSubview:label];
 }
+
+// MARK: Composite Pattern
+
+- (void)compositePattern {
+    Directory *root = [[Directory alloc] initWithName:@"root"];
+    Directory *documents = [[Directory alloc] initWithName:@"Documents"];
+    File *readme = [[File alloc] initWithName:@"readme.txt"];
+    [documents addComponent:readme];
+    [root addComponent:documents];
+    
+    Directory *pictures = [[Directory alloc] initWithName:@"Pictures"];
+    File *photo1 = [[File alloc] initWithName:@"photo1.jpg"];
+    File *photo2 = [[File alloc] initWithName:@"photo2.jpg"];
+    [pictures addComponent:photo1];
+    [pictures addComponent:photo2];
+    [root addComponent:pictures];
+
+    [root addComponent:[[File alloc] initWithName:@"notes.txt"]];
+    
+    // 调用 printFileSystem 方法来打印文件系统
+    [self printFileSystem:root];
+}
+
+- (void)printFileSystem:(FileSystemComponent *)component  {
+    NSLog(@"%@", component.name);
+    if ([component isKindOfClass:[Directory class]]) {
+        Directory *directory = (Directory *)component;
+        NSArray<FileSystemComponent *> *children = [directory getChildren];
+        for (FileSystemComponent *child in children) {
+            [self printFileSystem:child];
+        }
+    }
+}
+
+
 @end
