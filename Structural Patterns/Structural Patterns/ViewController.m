@@ -27,6 +27,8 @@
 
 #import "NetworkRequestFactory.h"
 
+#import "ImageCache.h"
+
 @interface ViewController ()
 
 @end
@@ -162,5 +164,16 @@
 
 }
 
+// MARK: Flyweight Pattern
+
+- (void)flyweightPattern {
+    ImageCache *imageCache = [ImageCache sharedCache];
+    UIImage *image = [imageCache getImageWithName:@"image1"];
+    if (image == nil) {
+        // 如果缓存中没有图像，则加载图像并存储到缓存中
+        image = [UIImage imageNamed:@"image1"];
+        [imageCache setImage:image withName:@"image1"];
+    }
+}
 
 @end
