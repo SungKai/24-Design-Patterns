@@ -20,6 +20,11 @@
 		B55DE3912A15099200BB2531 /* FileSystemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3902A15099200BB2531 /* FileSystemComponent.m */; };
 		B55DE3942A150A1500BB2531 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3932A150A1500BB2531 /* File.m */; };
 		B55DE3972A150A2400BB2531 /* Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3962A150A2400BB2531 /* Directory.m */; };
+		B55DE39C2A1517CC00BB2531 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE39B2A1517CC00BB2531 /* Rectangle.m */; };
+		B55DE39F2A15184A00BB2531 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE39E2A15184A00BB2531 /* Circle.m */; };
+		B55DE3A22A15187700BB2531 /* ShapeDecoratorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3A12A15187700BB2531 /* ShapeDecoratorFactory.m */; };
+		B55DE3A82A1623CB00BB2531 /* ColorDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3A72A1623CB00BB2531 /* ColorDecorator.m */; };
+		B55DE3AB2A16240F00BB2531 /* BorderDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3AA2A16240F00BB2531 /* BorderDecorator.m */; };
 		B5C4B1692A1106BB00E14DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B1682A1106BB00E14DAD /* AppDelegate.m */; };
 		B5C4B16C2A1106BB00E14DAD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B16B2A1106BB00E14DAD /* SceneDelegate.m */; };
 		B5C4B16F2A1106BB00E14DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B16E2A1106BB00E14DAD /* ViewController.m */; };
@@ -62,6 +67,17 @@
 		B55DE3932A150A1500BB2531 /* File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
 		B55DE3952A150A2400BB2531 /* Directory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Directory.h; sourceTree = "<group>"; };
 		B55DE3962A150A2400BB2531 /* Directory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Directory.m; sourceTree = "<group>"; };
+		B55DE3992A15179F00BB2531 /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		B55DE39A2A1517CC00BB2531 /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		B55DE39B2A1517CC00BB2531 /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		B55DE39D2A15184A00BB2531 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		B55DE39E2A15184A00BB2531 /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		B55DE3A02A15187700BB2531 /* ShapeDecoratorFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeDecoratorFactory.h; sourceTree = "<group>"; };
+		B55DE3A12A15187700BB2531 /* ShapeDecoratorFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeDecoratorFactory.m; sourceTree = "<group>"; };
+		B55DE3A62A1623CB00BB2531 /* ColorDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorDecorator.h; sourceTree = "<group>"; };
+		B55DE3A72A1623CB00BB2531 /* ColorDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorDecorator.m; sourceTree = "<group>"; };
+		B55DE3A92A16240F00BB2531 /* BorderDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderDecorator.h; sourceTree = "<group>"; };
+		B55DE3AA2A16240F00BB2531 /* BorderDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderDecorator.m; sourceTree = "<group>"; };
 		B5C4B1642A1106BB00E14DAD /* Structural Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Structural Patterns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C4B1672A1106BB00E14DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5C4B1682A1106BB00E14DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -226,6 +242,48 @@
 			path = "Composite Pattern";
 			sourceTree = "<group>";
 		};
+		B55DE3982A15176E00BB2531 /* Decorator Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3992A15179F00BB2531 /* Shape.h */,
+				B55DE3A52A1519F000BB2531 /* Base */,
+				B55DE3A42A1519C900BB2531 /* Decorator */,
+				B55DE3A32A1519BB00BB2531 /* Factory */,
+			);
+			path = "Decorator Pattern";
+			sourceTree = "<group>";
+		};
+		B55DE3A32A1519BB00BB2531 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3A02A15187700BB2531 /* ShapeDecoratorFactory.h */,
+				B55DE3A12A15187700BB2531 /* ShapeDecoratorFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B55DE3A42A1519C900BB2531 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3A62A1623CB00BB2531 /* ColorDecorator.h */,
+				B55DE3A72A1623CB00BB2531 /* ColorDecorator.m */,
+				B55DE3A92A16240F00BB2531 /* BorderDecorator.h */,
+				B55DE3AA2A16240F00BB2531 /* BorderDecorator.m */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		B55DE3A52A1519F000BB2531 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE39A2A1517CC00BB2531 /* Rectangle.h */,
+				B55DE39B2A1517CC00BB2531 /* Rectangle.m */,
+				B55DE39D2A15184A00BB2531 /* Circle.h */,
+				B55DE39E2A15184A00BB2531 /* Circle.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		B5C4B15B2A1106BB00E14DAD = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +314,7 @@
 				B5C4B1802A11072E00E14DAD /* Adapter Pattern */,
 				B55DE3632A14E84600BB2531 /* Bridge Pattern */,
 				B55DE38E2A15097100BB2531 /* Composite Pattern */,
+				B55DE3982A15176E00BB2531 /* Decorator Pattern */,
 				B5C4B1702A1106BB00E14DAD /* Main.storyboard */,
 				B5C4B1732A1106BC00E14DAD /* Assets.xcassets */,
 				B5C4B1752A1106BC00E14DAD /* LaunchScreen.storyboard */,
@@ -416,18 +475,23 @@
 				B5C4B16F2A1106BB00E14DAD /* ViewController.m in Sources */,
 				B5C4B1692A1106BB00E14DAD /* AppDelegate.m in Sources */,
 				B55DE3702A14EA9300BB2531 /* Abstraction.m in Sources */,
+				B55DE3A82A1623CB00BB2531 /* ColorDecorator.m in Sources */,
 				B55DE3752A14EEC600BB2531 /* HTTPRequest.m in Sources */,
 				B5C4B18A2A11082E00E14DAD /* GeneralizationAdapter.m in Sources */,
 				B55DE36B2A14E90E00BB2531 /* ConcreteImplementorB.m in Sources */,
 				B55DE3912A15099200BB2531 /* FileSystemComponent.m in Sources */,
 				B5C4B17A2A1106BC00E14DAD /* main.m in Sources */,
+				B55DE3AB2A16240F00BB2531 /* BorderDecorator.m in Sources */,
 				B5C4B16C2A1106BB00E14DAD /* SceneDelegate.m in Sources */,
 				B5C4B18F2A110B3000E14DAD /* DependencyAdapter.m in Sources */,
 				B55DE3862A14F4C800BB2531 /* DarkThemeStyle.m in Sources */,
+				B55DE39F2A15184A00BB2531 /* Circle.m in Sources */,
 				B55DE3972A150A2400BB2531 /* Directory.m in Sources */,
 				B55DE37D2A14EFAC00BB2531 /* NetworkClient.m in Sources */,
+				B55DE3A22A15187700BB2531 /* ShapeDecoratorFactory.m in Sources */,
 				B55DE38D2A14F54A00BB2531 /* ViewStyleViewController.m in Sources */,
 				B55DE3942A150A1500BB2531 /* File.m in Sources */,
+				B55DE39C2A1517CC00BB2531 /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

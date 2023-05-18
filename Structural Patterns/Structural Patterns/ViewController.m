@@ -23,6 +23,8 @@
 #import "File.h"
 #import "Directory.h"
 
+#import "ShapeDecoratorFactory.h"
+
 @interface ViewController ()
 
 @end
@@ -34,7 +36,8 @@
 //    [self adapterPattern_Generalization];
 //    [self adapterPattern_Dependency];
 //    [self bridgePattern_Simple];
-    [self compositePattern];
+//    [self compositePattern];
+    [self decoratorPattern];
 }
 
 // MARK: Adapter Pattern
@@ -128,6 +131,16 @@
             [self printFileSystem:child];
         }
     }
+}
+
+// MARK: Decorator Pattern
+
+- (void)decoratorPattern {
+    id<Shape> rectangle = [ShapeDecoratorFactory decoratedShapeWithType:@"rectangle"];
+    [rectangle draw];
+
+    id<Shape> circle = [ShapeDecoratorFactory decoratedShapeWithType:@"circle"];
+    [circle draw];
 }
 
 
