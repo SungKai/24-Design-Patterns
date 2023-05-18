@@ -25,6 +25,8 @@
 		B55DE3A22A15187700BB2531 /* ShapeDecoratorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3A12A15187700BB2531 /* ShapeDecoratorFactory.m */; };
 		B55DE3A82A1623CB00BB2531 /* ColorDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3A72A1623CB00BB2531 /* ColorDecorator.m */; };
 		B55DE3AB2A16240F00BB2531 /* BorderDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3AA2A16240F00BB2531 /* BorderDecorator.m */; };
+		B55DE3B12A16341800BB2531 /* NetworkRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3AF2A16341800BB2531 /* NetworkRequestFactory.m */; };
+		B55DE3B22A16341800BB2531 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3B02A16341800BB2531 /* NetworkManager.m */; };
 		B5C4B1692A1106BB00E14DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B1682A1106BB00E14DAD /* AppDelegate.m */; };
 		B5C4B16C2A1106BB00E14DAD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B16B2A1106BB00E14DAD /* SceneDelegate.m */; };
 		B5C4B16F2A1106BB00E14DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B16E2A1106BB00E14DAD /* ViewController.m */; };
@@ -78,6 +80,10 @@
 		B55DE3A72A1623CB00BB2531 /* ColorDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorDecorator.m; sourceTree = "<group>"; };
 		B55DE3A92A16240F00BB2531 /* BorderDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderDecorator.h; sourceTree = "<group>"; };
 		B55DE3AA2A16240F00BB2531 /* BorderDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderDecorator.m; sourceTree = "<group>"; };
+		B55DE3AD2A16341800BB2531 /* NetworkRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkRequestFactory.h; path = "../../../Creational Patterns/Creational Patterns/Simple Factory Pattern/Network/NetworkRequestFactory.h"; sourceTree = "<group>"; };
+		B55DE3AE2A16341800BB2531 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = "../../../Creational Patterns/Creational Patterns/Simple Factory Pattern/Network/NetworkManager.h"; sourceTree = "<group>"; };
+		B55DE3AF2A16341800BB2531 /* NetworkRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkRequestFactory.m; path = "../../../Creational Patterns/Creational Patterns/Simple Factory Pattern/Network/NetworkRequestFactory.m"; sourceTree = "<group>"; };
+		B55DE3B02A16341800BB2531 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = "../../../Creational Patterns/Creational Patterns/Simple Factory Pattern/Network/NetworkManager.m"; sourceTree = "<group>"; };
 		B5C4B1642A1106BB00E14DAD /* Structural Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Structural Patterns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C4B1672A1106BB00E14DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5C4B1682A1106BB00E14DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -284,6 +290,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		B55DE3AC2A1633AD00BB2531 /* Facade Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3AE2A16341800BB2531 /* NetworkManager.h */,
+				B55DE3B02A16341800BB2531 /* NetworkManager.m */,
+				B55DE3AD2A16341800BB2531 /* NetworkRequestFactory.h */,
+				B55DE3AF2A16341800BB2531 /* NetworkRequestFactory.m */,
+			);
+			path = "Facade Pattern";
+			sourceTree = "<group>";
+		};
 		B5C4B15B2A1106BB00E14DAD = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +332,7 @@
 				B55DE3632A14E84600BB2531 /* Bridge Pattern */,
 				B55DE38E2A15097100BB2531 /* Composite Pattern */,
 				B55DE3982A15176E00BB2531 /* Decorator Pattern */,
+				B55DE3AC2A1633AD00BB2531 /* Facade Pattern */,
 				B5C4B1702A1106BB00E14DAD /* Main.storyboard */,
 				B5C4B1732A1106BC00E14DAD /* Assets.xcassets */,
 				B5C4B1752A1106BC00E14DAD /* LaunchScreen.storyboard */,
@@ -470,6 +488,7 @@
 			files = (
 				B55DE3832A14F46900BB2531 /* LightThemeStyle.m in Sources */,
 				B5C4B1832A11075E00E14DAD /* OldAPI.m in Sources */,
+				B55DE3B22A16341800BB2531 /* NetworkManager.m in Sources */,
 				B55DE3782A14EF3500BB2531 /* WebSocketRequest.m in Sources */,
 				B55DE3682A14E8E400BB2531 /* ConcreteImplementorA.m in Sources */,
 				B5C4B16F2A1106BB00E14DAD /* ViewController.m in Sources */,
@@ -486,6 +505,7 @@
 				B5C4B18F2A110B3000E14DAD /* DependencyAdapter.m in Sources */,
 				B55DE3862A14F4C800BB2531 /* DarkThemeStyle.m in Sources */,
 				B55DE39F2A15184A00BB2531 /* Circle.m in Sources */,
+				B55DE3B12A16341800BB2531 /* NetworkRequestFactory.m in Sources */,
 				B55DE3972A150A2400BB2531 /* Directory.m in Sources */,
 				B55DE37D2A14EFAC00BB2531 /* NetworkClient.m in Sources */,
 				B55DE3A22A15187700BB2531 /* ShapeDecoratorFactory.m in Sources */,

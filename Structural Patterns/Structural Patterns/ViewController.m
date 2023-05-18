@@ -25,6 +25,8 @@
 
 #import "ShapeDecoratorFactory.h"
 
+#import "NetworkRequestFactory.h"
+
 @interface ViewController ()
 
 @end
@@ -141,6 +143,23 @@
 
     id<Shape> circle = [ShapeDecoratorFactory decoratedShapeWithType:@"circle"];
     [circle draw];
+}
+
+// MARK: Facade Pattern
+
+- (void)facadePattern {
+    NetworkManager *networkManager = [NetworkRequestFactory creatNetworkManager];
+    [networkManager requestURL:@"http://example.com/api"
+                          type:NetworkManagerRequestTypeGet
+                    parameters:nil
+                      progress:nil
+                       success:^(NSURLSessionDataTask *task, id responseObject) {
+                           // 请求成功处理
+                       }
+                       failure:^(NSURLSessionDataTask *task, NSError *error) {
+                           // 请求失败处理
+                       }];
+
 }
 
 
