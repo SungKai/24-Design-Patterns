@@ -28,6 +28,8 @@
 		B55DE3B12A16341800BB2531 /* NetworkRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3AF2A16341800BB2531 /* NetworkRequestFactory.m */; };
 		B55DE3B22A16341800BB2531 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3B02A16341800BB2531 /* NetworkManager.m */; };
 		B55DE3B62A1661DB00BB2531 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3B52A1661DA00BB2531 /* ImageCache.m */; };
+		B55DE3BD2A16820100BB2531 /* RealDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3BC2A16820100BB2531 /* RealDownloader.m */; };
+		B55DE3C12A16829400BB2531 /* DownloaderProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE3C02A16829400BB2531 /* DownloaderProxy.m */; };
 		B5C4B1692A1106BB00E14DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B1682A1106BB00E14DAD /* AppDelegate.m */; };
 		B5C4B16C2A1106BB00E14DAD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B16B2A1106BB00E14DAD /* SceneDelegate.m */; };
 		B5C4B16F2A1106BB00E14DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4B16E2A1106BB00E14DAD /* ViewController.m */; };
@@ -87,6 +89,11 @@
 		B55DE3B02A16341800BB2531 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = "../../../Creational Patterns/Creational Patterns/Simple Factory Pattern/Network/NetworkManager.m"; sourceTree = "<group>"; };
 		B55DE3B42A1661DA00BB2531 /* ImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
 		B55DE3B52A1661DA00BB2531 /* ImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		B55DE3BB2A16820100BB2531 /* RealDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealDownloader.h; sourceTree = "<group>"; };
+		B55DE3BC2A16820100BB2531 /* RealDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealDownloader.m; sourceTree = "<group>"; };
+		B55DE3BE2A16825E00BB2531 /* Downloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Downloader.h; sourceTree = "<group>"; };
+		B55DE3BF2A16829400BB2531 /* DownloaderProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloaderProxy.h; sourceTree = "<group>"; };
+		B55DE3C02A16829400BB2531 /* DownloaderProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloaderProxy.m; sourceTree = "<group>"; };
 		B5C4B1642A1106BB00E14DAD /* Structural Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Structural Patterns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C4B1672A1106BB00E14DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5C4B1682A1106BB00E14DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -313,6 +320,18 @@
 			path = "Flyweight Pattern";
 			sourceTree = "<group>";
 		};
+		B55DE3B72A16695200BB2531 /* Proxy Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B55DE3BE2A16825E00BB2531 /* Downloader.h */,
+				B55DE3BB2A16820100BB2531 /* RealDownloader.h */,
+				B55DE3BC2A16820100BB2531 /* RealDownloader.m */,
+				B55DE3BF2A16829400BB2531 /* DownloaderProxy.h */,
+				B55DE3C02A16829400BB2531 /* DownloaderProxy.m */,
+			);
+			path = "Proxy Pattern";
+			sourceTree = "<group>";
+		};
 		B5C4B15B2A1106BB00E14DAD = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +365,7 @@
 				B55DE3982A15176E00BB2531 /* Decorator Pattern */,
 				B55DE3AC2A1633AD00BB2531 /* Facade Pattern */,
 				B55DE3B32A1661B700BB2531 /* Flyweight Pattern */,
+				B55DE3B72A16695200BB2531 /* Proxy Pattern */,
 				B5C4B1702A1106BB00E14DAD /* Main.storyboard */,
 				B5C4B1732A1106BC00E14DAD /* Assets.xcassets */,
 				B5C4B1752A1106BC00E14DAD /* LaunchScreen.storyboard */,
@@ -508,6 +528,7 @@
 				B5C4B1692A1106BB00E14DAD /* AppDelegate.m in Sources */,
 				B55DE3702A14EA9300BB2531 /* Abstraction.m in Sources */,
 				B55DE3A82A1623CB00BB2531 /* ColorDecorator.m in Sources */,
+				B55DE3C12A16829400BB2531 /* DownloaderProxy.m in Sources */,
 				B55DE3752A14EEC600BB2531 /* HTTPRequest.m in Sources */,
 				B5C4B18A2A11082E00E14DAD /* GeneralizationAdapter.m in Sources */,
 				B55DE36B2A14E90E00BB2531 /* ConcreteImplementorB.m in Sources */,
@@ -520,6 +541,7 @@
 				B55DE3862A14F4C800BB2531 /* DarkThemeStyle.m in Sources */,
 				B55DE39F2A15184A00BB2531 /* Circle.m in Sources */,
 				B55DE3B12A16341800BB2531 /* NetworkRequestFactory.m in Sources */,
+				B55DE3BD2A16820100BB2531 /* RealDownloader.m in Sources */,
 				B55DE3972A150A2400BB2531 /* Directory.m in Sources */,
 				B55DE37D2A14EFAC00BB2531 /* NetworkClient.m in Sources */,
 				B55DE3A22A15187700BB2531 /* ShapeDecoratorFactory.m in Sources */,

@@ -29,6 +29,8 @@
 
 #import "ImageCache.h"
 
+#import "DownloaderProxy.h"
+
 @interface ViewController ()
 
 @end
@@ -174,6 +176,13 @@
         image = [UIImage imageNamed:@"image1"];
         [imageCache setImage:image withName:@"image1"];
     }
+}
+
+// MARK: Proxy Pattern
+
+- (void)proxyPattern {
+    id<Downloader> downloader = [[DownloaderProxy alloc] init];
+    [downloader downloadFile:@"http://example.com/file.txt"];
 }
 
 @end
