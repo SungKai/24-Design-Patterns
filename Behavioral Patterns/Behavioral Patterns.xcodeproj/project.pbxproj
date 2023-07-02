@@ -22,6 +22,8 @@
 		B57423102A517B06001247ED /* RequestValidityHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B574230F2A517B06001247ED /* RequestValidityHandler.m */; };
 		B57423132A517B7D001247ED /* UserPermissionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B57423122A517B7D001247ED /* UserPermissionHandler.m */; };
 		B57423162A517BDF001247ED /* RequestProcessingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B57423152A517BDF001247ED /* RequestProcessingHandler.m */; };
+		B5D425022A51B4BC00F51E2F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425012A51B4BC00F51E2F /* LoginViewController.m */; };
+		B5D425052A51B59D00F51E2F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425042A51B59D00F51E2F /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,10 @@
 		B57423122A517B7D001247ED /* UserPermissionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPermissionHandler.m; sourceTree = "<group>"; };
 		B57423142A517BDF001247ED /* RequestProcessingHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestProcessingHandler.h; sourceTree = "<group>"; };
 		B57423152A517BDF001247ED /* RequestProcessingHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestProcessingHandler.m; sourceTree = "<group>"; };
+		B5D425002A51B4BC00F51E2F /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B5D425012A51B4BC00F51E2F /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B5D425032A51B59D00F51E2F /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		B5D425042A51B59D00F51E2F /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 				B57422E92A51746F001247ED /* ViewController.h */,
 				B57422EA2A51746F001247ED /* ViewController.m */,
 				B57422FC2A5174A5001247ED /* Chain of Responsibility Pattern */,
+				B5D424FF2A51B47D00F51E2F /* Observer Pattern */,
 				B57422EC2A51746F001247ED /* Main.storyboard */,
 				B57422EF2A517470001247ED /* Assets.xcassets */,
 				B57422F12A517470001247ED /* LaunchScreen.storyboard */,
@@ -138,6 +145,17 @@
 				B57423152A517BDF001247ED /* RequestProcessingHandler.m */,
 			);
 			path = RequestValidity;
+			sourceTree = "<group>";
+		};
+		B5D424FF2A51B47D00F51E2F /* Observer Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B5D425002A51B4BC00F51E2F /* LoginViewController.h */,
+				B5D425012A51B4BC00F51E2F /* LoginViewController.m */,
+				B5D425032A51B59D00F51E2F /* ProfileViewController.h */,
+				B5D425042A51B59D00F51E2F /* ProfileViewController.m */,
+			);
+			path = "Observer Pattern";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +230,9 @@
 			files = (
 				B57422EB2A51746F001247ED /* ViewController.m in Sources */,
 				B57423162A517BDF001247ED /* RequestProcessingHandler.m in Sources */,
+				B5D425022A51B4BC00F51E2F /* LoginViewController.m in Sources */,
 				B57423092A5175E1001247ED /* ConcreteHandlerC.m in Sources */,
+				B5D425052A51B59D00F51E2F /* ProfileViewController.m in Sources */,
 				B57423132A517B7D001247ED /* UserPermissionHandler.m in Sources */,
 				B57423032A517578001247ED /* ConcreteHandlerA.m in Sources */,
 				B574230D2A517AAC001247ED /* RequestHandler.m in Sources */,

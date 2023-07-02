@@ -14,6 +14,9 @@
 #import "UserPermissionHandler.h"
 #import "RequestProcessingHandler.h"
 
+#import "LoginViewController.h"
+#import "ProfileViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -22,8 +25,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self base_chainOfResponsibilityPattern];
+//    [self base_chainOfResponsibilityPattern];
 //    [self requestValidity_chainOfResponsibilityPattern];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self observerPattern];
 }
 
 // MARK: Chain of Responsibility Pattern
@@ -59,5 +68,15 @@
     // 发送请求
     [validHandler handleRequest:request];
 }
+
+// MARK: Observer Pattern
+
+- (void)observerPattern {
+    ProfileViewController *proVC = [[ProfileViewController alloc] init];
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    [self presentViewController:proVC animated:YES completion:nil];
+    [proVC presentViewController:loginVC animated:YES completion:nil];
+}
+
 
 @end

@@ -42,7 +42,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-//    [self crp];
+    [self crp];
 }
 
 // MARK: Open/Closed Principle
