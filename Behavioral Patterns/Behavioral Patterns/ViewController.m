@@ -17,6 +17,11 @@
 #import "LoginViewController.h"
 #import "ProfileViewController.h"
 
+#import "AdditionStrategy.h"
+#import "SubtractionStrategy.h"
+#import "MultiplicationStrategy.h"
+#import "Calculator.h"
+
 @interface ViewController ()
 
 @end
@@ -27,7 +32,7 @@
     [super viewDidLoad];
 //    [self base_chainOfResponsibilityPattern];
 //    [self requestValidity_chainOfResponsibilityPattern];
-    
+    [self strategyPattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -76,6 +81,26 @@
     LoginViewController *loginVC = [[LoginViewController alloc] init];
     [self presentViewController:proVC animated:YES completion:nil];
     [proVC presentViewController:loginVC animated:YES completion:nil];
+}
+
+// MARK: Strategy Pattern
+
+- (void)strategyPattern {
+    Calculator *calculator = [[Calculator alloc] init];
+    // 加法运算
+    calculator.strategy = [[AdditionStrategy alloc] init];
+    NSInteger result = [calculator performOperationWithNumber:5 andNumber:3];
+    NSLog(@"加法结果：%ld", result);
+    
+    // 减法运算
+    calculator.strategy = [[SubtractionStrategy alloc] init];
+    result = [calculator performOperationWithNumber:5 andNumber:3];
+    NSLog(@"减法结果：%ld", result);
+    
+    // 乘法运算
+    calculator.strategy = [[MultiplicationStrategy alloc] init];
+    result = [calculator performOperationWithNumber:5 andNumber:3];
+    NSLog(@"乘法结果：%ld", result);
 }
 
 
