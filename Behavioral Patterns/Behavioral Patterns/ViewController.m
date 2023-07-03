@@ -22,6 +22,9 @@
 #import "MultiplicationStrategy.h"
 #import "Calculator.h"
 
+#import "ConcreteClass1.h"
+#import "ConcreteClass2.h"
+
 @interface ViewController ()
 
 @end
@@ -32,7 +35,8 @@
     [super viewDidLoad];
 //    [self base_chainOfResponsibilityPattern];
 //    [self requestValidity_chainOfResponsibilityPattern];
-    [self strategyPattern];
+//    [self strategyPattern];
+    [self templateMethodPattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -103,5 +107,20 @@
     NSLog(@"乘法结果：%ld", result);
 }
 
+// MARK: Template Method Pattern
+
+- (void)templateMethodPattern {
+    AbstractClass *class1 = [[ConcreteClass1 alloc] init];
+    [class1 templateMethod];
+    // Output:
+    // ConcreteClass1: 执行步骤 1
+    // ConcreteClass1: 执行步骤 2
+    
+    AbstractClass *class2 = [[ConcreteClass2 alloc] init];
+    [class2 templateMethod];
+    // Output:
+    // ConcreteClass2: 执行步骤 1
+    // ConcreteClass2: 执行步骤 2
+}
 
 @end
