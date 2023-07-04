@@ -43,6 +43,10 @@
 #import "Colleague1.h"
 #import "Colleague2.h"
 
+#import "Memento.h"
+#import "Originator.h"
+#import "Caretaker.h"
+
 @interface ViewController ()
 
 @end
@@ -59,7 +63,8 @@
 //    [self async_commandPattern];
 //    [self interpreterPattern];
 //    [self iteratorPattern];
-    [self mediatorPattern];
+//    [self mediatorPattern];
+    [self mementoPattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -248,6 +253,30 @@
     [colleague2 send:@"Hello, colleague1!"];
 }
 
+// MARK: Memento Pattern
 
+- (void)mementoPattern {
+    // 使用备忘录模式
+    Originator *originator = [[Originator alloc] init];
+    Caretaker *caretaker = [[Caretaker alloc] init];
+    
+    // 设置发起人的状态
+    originator.state = @"state1";
+    // 创建备忘录并保存状态
+    Memento *memento1 = [originator createMemento];
+    [caretaker addMemento:memento1];
+    
+    // 修改发起人的状态
+    originator.state = @"state2";
+    // 创建备忘录并保存状态
+    Memento *memento2 = [originator createMemento];
+    [caretaker addMemento:memento2];
+    
+    // 恢复到第一个备忘录保存的状态
+    Memento *saveMemento = [caretaker getMementoAtIndex:0];
+    [originator restoreFromMemento:saveMemento];
+    
+    NSLog(@"Current state: %@", originator.state);
+}
 
 @end

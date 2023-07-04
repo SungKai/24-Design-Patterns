@@ -46,6 +46,9 @@
 		B5D425502A5467B600F51E2F /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4254F2A5467B600F51E2F /* Colleague.m */; };
 		B5D425532A54682500F51E2F /* Colleague1.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425522A54682500F51E2F /* Colleague1.m */; };
 		B5D425562A54682A00F51E2F /* Colleague2.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425552A54682A00F51E2F /* Colleague2.m */; };
+		B5D4255A2A54707B00F51E2F /* Memento.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425592A54707B00F51E2F /* Memento.m */; };
+		B5D4255D2A54709C00F51E2F /* Originator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4255C2A54709C00F51E2F /* Originator.m */; };
+		B5D425602A54711A00F51E2F /* Caretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4255F2A54711A00F51E2F /* Caretaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +134,12 @@
 		B5D425522A54682500F51E2F /* Colleague1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Colleague1.m; sourceTree = "<group>"; };
 		B5D425542A54682A00F51E2F /* Colleague2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colleague2.h; sourceTree = "<group>"; };
 		B5D425552A54682A00F51E2F /* Colleague2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Colleague2.m; sourceTree = "<group>"; };
+		B5D425582A54707B00F51E2F /* Memento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Memento.h; sourceTree = "<group>"; };
+		B5D425592A54707B00F51E2F /* Memento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memento.m; sourceTree = "<group>"; };
+		B5D4255B2A54709C00F51E2F /* Originator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Originator.h; sourceTree = "<group>"; };
+		B5D4255C2A54709C00F51E2F /* Originator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Originator.m; sourceTree = "<group>"; };
+		B5D4255E2A54711A00F51E2F /* Caretaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Caretaker.h; sourceTree = "<group>"; };
+		B5D4255F2A54711A00F51E2F /* Caretaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caretaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +186,7 @@
 				B5D425312A54204A00F51E2F /* Interpreter Pattern */,
 				B5D4253F2A5438EF00F51E2F /* Iterator Pattern */,
 				B5D425492A5466F800F51E2F /* Mediator Pattern */,
+				B5D425572A54706E00F51E2F /* Memento Pattern */,
 				B57422EC2A51746F001247ED /* Main.storyboard */,
 				B57422EF2A517470001247ED /* Assets.xcassets */,
 				B57422F12A517470001247ED /* LaunchScreen.storyboard */,
@@ -344,6 +354,19 @@
 			path = "Mediator Pattern";
 			sourceTree = "<group>";
 		};
+		B5D425572A54706E00F51E2F /* Memento Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B5D425582A54707B00F51E2F /* Memento.h */,
+				B5D425592A54707B00F51E2F /* Memento.m */,
+				B5D4255B2A54709C00F51E2F /* Originator.h */,
+				B5D4255C2A54709C00F51E2F /* Originator.m */,
+				B5D4255E2A54711A00F51E2F /* Caretaker.h */,
+				B5D4255F2A54711A00F51E2F /* Caretaker.m */,
+			);
+			path = "Memento Pattern";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,6 +463,7 @@
 				B574230D2A517AAC001247ED /* RequestHandler.m in Sources */,
 				B5D4250A2A52A7E600F51E2F /* AdditionStrategy.m in Sources */,
 				B57423062A5175C9001247ED /* ConcreteHandlerB.m in Sources */,
+				B5D4255A2A54707B00F51E2F /* Memento.m in Sources */,
 				B5D4254D2A54676F00F51E2F /* ConcreteMediator.m in Sources */,
 				B5D425382A542A7200F51E2F /* AdditionExpression.m in Sources */,
 				B57422E52A51746F001247ED /* AppDelegate.m in Sources */,
@@ -448,8 +472,10 @@
 				B5D425252A53EC0E00F51E2F /* Receiver.m in Sources */,
 				B57422F62A517470001247ED /* main.m in Sources */,
 				B5D425132A52A8BF00F51E2F /* Calculator.m in Sources */,
+				B5D4255D2A54709C00F51E2F /* Originator.m in Sources */,
 				B57422E82A51746F001247ED /* SceneDelegate.m in Sources */,
 				B57423002A5174CF001247ED /* Handler.m in Sources */,
+				B5D425602A54711A00F51E2F /* Caretaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
