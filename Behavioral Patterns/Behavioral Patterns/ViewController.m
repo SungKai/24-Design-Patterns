@@ -47,6 +47,8 @@
 #import "Originator.h"
 #import "Caretaker.h"
 
+#import "MusicPlayer.h"
+
 @interface ViewController ()
 
 @end
@@ -64,7 +66,8 @@
 //    [self interpreterPattern];
 //    [self iteratorPattern];
 //    [self mediatorPattern];
-    [self mementoPattern];
+//    [self mementoPattern];
+    [self statePattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -277,6 +280,16 @@
     [originator restoreFromMemento:saveMemento];
     
     NSLog(@"Current state: %@", originator.state);
+}
+
+// MARK: State Pattern
+
+- (void)statePattern {
+    MusicPlayer *player = [[MusicPlayer alloc] init];
+    [player playMusic];  // output：开始播放音乐
+    [player pauseMusic];  // output：暂停音乐
+    [player playMusic];  // output：继续播放音乐
+    [player stopMusic];  // output：停止播放音乐
 }
 
 @end
