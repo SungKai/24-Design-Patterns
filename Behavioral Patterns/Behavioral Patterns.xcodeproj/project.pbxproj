@@ -40,6 +40,8 @@
 		B5D425382A542A7200F51E2F /* AdditionExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425372A542A7200F51E2F /* AdditionExpression.m */; };
 		B5D4253B2A542AD800F51E2F /* SubtractionExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4253A2A542AD800F51E2F /* SubtractionExpression.m */; };
 		B5D4253E2A542B1900F51E2F /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4253D2A542B1900F51E2F /* Context.m */; };
+		B5D425452A54397B00F51E2F /* ConcreteIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425442A54397B00F51E2F /* ConcreteIterator.m */; };
+		B5D425482A543A8B00F51E2F /* ConcreteAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425472A543A8B00F51E2F /* ConcreteAggregate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,12 @@
 		B5D4253A2A542AD800F51E2F /* SubtractionExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubtractionExpression.m; sourceTree = "<group>"; };
 		B5D4253C2A542B1900F51E2F /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
 		B5D4253D2A542B1900F51E2F /* Context.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		B5D425402A54390A00F51E2F /* Iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
+		B5D425422A54394000F51E2F /* Aggregate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aggregate.h; sourceTree = "<group>"; };
+		B5D425432A54397B00F51E2F /* ConcreteIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteIterator.h; sourceTree = "<group>"; };
+		B5D425442A54397B00F51E2F /* ConcreteIterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteIterator.m; sourceTree = "<group>"; };
+		B5D425462A543A8B00F51E2F /* ConcreteAggregate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteAggregate.h; sourceTree = "<group>"; };
+		B5D425472A543A8B00F51E2F /* ConcreteAggregate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteAggregate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +162,7 @@
 				B5D425142A52B9EC00F51E2F /* Template Method Pattern */,
 				B5D4251E2A53EBA700F51E2F /* Command Pattern */,
 				B5D425312A54204A00F51E2F /* Interpreter Pattern */,
+				B5D4253F2A5438EF00F51E2F /* Iterator Pattern */,
 				B57422EC2A51746F001247ED /* Main.storyboard */,
 				B57422EF2A517470001247ED /* Assets.xcassets */,
 				B57422F12A517470001247ED /* LaunchScreen.storyboard */,
@@ -292,6 +301,19 @@
 			path = "Interpreter Pattern";
 			sourceTree = "<group>";
 		};
+		B5D4253F2A5438EF00F51E2F /* Iterator Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B5D425402A54390A00F51E2F /* Iterator.h */,
+				B5D425422A54394000F51E2F /* Aggregate.h */,
+				B5D425432A54397B00F51E2F /* ConcreteIterator.h */,
+				B5D425442A54397B00F51E2F /* ConcreteIterator.m */,
+				B5D425462A543A8B00F51E2F /* ConcreteAggregate.h */,
+				B5D425472A543A8B00F51E2F /* ConcreteAggregate.m */,
+			);
+			path = "Iterator Pattern";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,6 +392,7 @@
 				B5D425172A52BA0B00F51E2F /* AbstractClass.m in Sources */,
 				B5D425222A53EBEA00F51E2F /* ConcreteCommand.m in Sources */,
 				B5D425102A52A87200F51E2F /* MultiplicationStrategy.m in Sources */,
+				B5D425482A543A8B00F51E2F /* ConcreteAggregate.m in Sources */,
 				B5D4251D2A52BA6400F51E2F /* ConcreteClass2.m in Sources */,
 				B5D425022A51B4BC00F51E2F /* LoginViewController.m in Sources */,
 				B5D425302A53F5B900F51E2F /* AsyncTaskQueue.m in Sources */,
@@ -380,6 +403,7 @@
 				B57423132A517B7D001247ED /* UserPermissionHandler.m in Sources */,
 				B5D4251A2A52BA2E00F51E2F /* ConcreteClass1.m in Sources */,
 				B57423032A517578001247ED /* ConcreteHandlerA.m in Sources */,
+				B5D425452A54397B00F51E2F /* ConcreteIterator.m in Sources */,
 				B574230D2A517AAC001247ED /* RequestHandler.m in Sources */,
 				B5D4250A2A52A7E600F51E2F /* AdditionStrategy.m in Sources */,
 				B57423062A5175C9001247ED /* ConcreteHandlerB.m in Sources */,

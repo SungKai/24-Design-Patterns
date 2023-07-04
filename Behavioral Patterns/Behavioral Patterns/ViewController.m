@@ -36,6 +36,8 @@
 #import "AdditionExpression.h"
 #import "SubtractionExpression.h"
 
+#import "ConcreteIterator.h"
+#import "ConcreteAggregate.h"
 
 @interface ViewController ()
 
@@ -51,7 +53,8 @@
 //    [self templateMethodPattern];
 //    [self base_commandPattern];
 //    [self async_commandPattern];
-    [self interpreterPattern];
+//    [self interpreterPattern];
+    [self iteratorPattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -204,6 +207,22 @@
     NSLog(@"Result: %ld", (long)result);
 }
 
+// MARK: Iterator Pattern
 
+- (void)iteratorPattern{
+    NSArray *array = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"];
+
+    // 创建具体集合对象
+    ConcreteAggregate *aggregate = [[ConcreteAggregate alloc] initWithCollection:array];
+    
+    // 创建迭代器对象
+    id<Iterator> iterator = [aggregate createIterator];
+    
+    // 使用迭代器遍历集合对象
+    while ([iterator hasNext]) {
+        id item = [iterator next];
+        NSLog(@"%@", item);
+    }
+}
 
 @end
