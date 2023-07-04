@@ -39,6 +39,10 @@
 #import "ConcreteIterator.h"
 #import "ConcreteAggregate.h"
 
+#import "ConcreteMediator.h"
+#import "Colleague1.h"
+#import "Colleague2.h"
+
 @interface ViewController ()
 
 @end
@@ -54,7 +58,8 @@
 //    [self base_commandPattern];
 //    [self async_commandPattern];
 //    [self interpreterPattern];
-    [self iteratorPattern];
+//    [self iteratorPattern];
+    [self mediatorPattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -224,5 +229,25 @@
         NSLog(@"%@", item);
     }
 }
+
+// MARK: Mediator Pattern
+
+- (void)mediatorPattern {
+    // 中介者
+    ConcreteMediator *mediator = [[ConcreteMediator alloc] init];
+    
+    // 两个通信的同事
+    Colleague1 *colleague1 = [[Colleague1 alloc] initWithMediator:mediator];
+    Colleague2 *colleague2 = [[Colleague2 alloc] initWithMediator:mediator];
+    
+    mediator.colleague1 = colleague1;
+    mediator.colleague2 = colleague2;
+    
+    // 通信
+    [colleague1 send:@"Hello, colleague2!"];
+    [colleague2 send:@"Hello, colleague1!"];
+}
+
+
 
 @end
