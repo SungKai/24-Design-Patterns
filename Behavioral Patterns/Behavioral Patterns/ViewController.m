@@ -31,6 +31,11 @@
 #import "AsyncTaskCommand.h"
 #import "AsyncTaskQueue.h"
 
+#import "Context.h"
+#import "NumberExpression.h"
+#import "AdditionExpression.h"
+#import "SubtractionExpression.h"
+
 
 @interface ViewController ()
 
@@ -45,12 +50,13 @@
 //    [self strategyPattern];
 //    [self templateMethodPattern];
 //    [self base_commandPattern];
-    [self async_commandPattern];
+//    [self async_commandPattern];
+    [self interpreterPattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self observerPattern];
+//    [self observerPattern];
 }
 
 // MARK: Chain of Responsibility Pattern
@@ -176,7 +182,27 @@
     [taskQueue executeTasks];
 }
 
+// MARK: Interpreter Pattern
 
+- (void)interpreterPattern {
+    Context *context = [[Context alloc] init];
+    context.variables = @{
+        @"x" : @(10),
+        @"y" : @(5)
+    };
+    
+    AdditionExpression *expression = [[AdditionExpression alloc] init];
+    expression.leftExpression = [[NumberExpression alloc] init];
+    ((NumberExpression *)expression.leftExpression).number = [context valueForVariable:@"x"].integerValue;
+    expression.rightExpression = [[SubtractionExpression alloc] init];
+    ((SubtractionExpression *)expression.rightExpression).leftExpression = [[NumberExpression alloc] init];
+    ((NumberExpression *)((SubtractionExpression *)expression.rightExpression).leftExpression).number = [context valueForVariable:@"y"].integerValue;
+    ((SubtractionExpression *)expression.rightExpression).rightExpression = [[NumberExpression alloc] init];
+    ((NumberExpression *)((SubtractionExpression *)expression.rightExpression).rightExpression).number = 2;
+
+    NSInteger result = [expression interpretWithContext:context.variables];
+    NSLog(@"Result: %ld", (long)result);
+}
 
 
 
