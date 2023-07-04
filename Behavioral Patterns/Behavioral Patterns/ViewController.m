@@ -49,6 +49,10 @@
 
 #import "MusicPlayer.h"
 
+#import "ConcreteVisitor.h"
+#import "ConcreteElementA.h"
+#import "ConcreteElementB.h"
+
 @interface ViewController ()
 
 @end
@@ -67,7 +71,8 @@
 //    [self iteratorPattern];
 //    [self mediatorPattern];
 //    [self mementoPattern];
-    [self statePattern];
+//    [self statePattern];
+//    [self visitorPattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -290,6 +295,19 @@
     [player pauseMusic];  // output：暂停音乐
     [player playMusic];  // output：继续播放音乐
     [player stopMusic];  // output：停止播放音乐
+}
+
+// MARK: Visitor Pattern
+
+- (void)visitorPattern {
+    ConcreteElementA *elementA = [[ConcreteElementA alloc] init];
+    ConcreteElementB *elementB = [[ConcreteElementB alloc] init];
+
+    ConcreteVisitor *visitor = [[ConcreteVisitor alloc] init];
+    
+    // 通过将访问者对象传递给元素，元素可以将自身委托给访问者来执行特定的操作
+    [elementA acceptVisitor:visitor];
+    [elementB acceptVisitor:visitor];
 }
 
 @end
