@@ -25,6 +25,13 @@
 #import "ConcreteClass1.h"
 #import "ConcreteClass2.h"
 
+#import "Invoker.h"
+#import "Receiver.h"
+#import "ConcreteCommand.h"
+#import "AsyncTaskCommand.h"
+#import "AsyncTaskQueue.h"
+
+
 @interface ViewController ()
 
 @end
@@ -36,7 +43,9 @@
 //    [self base_chainOfResponsibilityPattern];
 //    [self requestValidity_chainOfResponsibilityPattern];
 //    [self strategyPattern];
-    [self templateMethodPattern];
+//    [self templateMethodPattern];
+//    [self base_commandPattern];
+    [self async_commandPattern];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -122,5 +131,53 @@
     // ConcreteClass2: 执行步骤 1
     // ConcreteClass2: 执行步骤 2
 }
+
+// MARK: Command Pattern
+
+- (void)base_commandPattern {
+    // 创建接收者对象
+    Receiver *receiver = [[Receiver alloc] init];
+    
+    // 创建具体命令对象并将接收者传递给它
+    ConcreteCommand *command = [[ConcreteCommand alloc] initWithReceiver:receiver];
+    
+    // 创建发送者对象，并设置命令
+    Invoker *invoker = [[Invoker alloc] init];
+    [invoker setCommand:command];
+    
+    // 发送者触发命令执行
+    [invoker executeCommand];
+}
+
+- (void)async_commandPattern {
+    // 创建异步任务队列
+    AsyncTaskQueue *taskQueue = [[AsyncTaskQueue alloc] init];
+    // 创建异步任务命令对象并添加到队列
+    AsyncTaskCommand *task1 = [[AsyncTaskCommand alloc] initWithTaskName:@"Task 1" priority:1];
+    AsyncTaskCommand *task2 = [[AsyncTaskCommand alloc] initWithTaskName:@"Task 2" priority:3];
+    AsyncTaskCommand *task3 = [[AsyncTaskCommand alloc] initWithTaskName:@"Task 3" priority:2];
+    [taskQueue addTask:task1];
+    [taskQueue addTask:task2];
+    [taskQueue addTask:task3];
+    
+    // 执行异步任务队列中的任务
+    [taskQueue executeTasks];
+    
+    // 暂停任务
+    [taskQueue pauseTasks];
+
+    // 继续执行任务
+    [taskQueue resumeTasks];
+
+    // 移除任务
+    [taskQueue removeTask:task2];
+
+    // 执行剩下的任务
+    [taskQueue executeTasks];
+}
+
+
+
+
 
 @end

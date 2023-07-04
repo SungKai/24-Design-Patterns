@@ -31,6 +31,11 @@
 		B5D425172A52BA0B00F51E2F /* AbstractClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425162A52BA0B00F51E2F /* AbstractClass.m */; };
 		B5D4251A2A52BA2E00F51E2F /* ConcreteClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425192A52BA2E00F51E2F /* ConcreteClass1.m */; };
 		B5D4251D2A52BA6400F51E2F /* ConcreteClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4251C2A52BA6400F51E2F /* ConcreteClass2.m */; };
+		B5D425222A53EBEA00F51E2F /* ConcreteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425212A53EBEA00F51E2F /* ConcreteCommand.m */; };
+		B5D425252A53EC0E00F51E2F /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425242A53EC0E00F51E2F /* Receiver.m */; };
+		B5D425282A53ECCF00F51E2F /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D425272A53ECCF00F51E2F /* Invoker.m */; };
+		B5D4252D2A53F44D00F51E2F /* AsyncTaskCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4252C2A53F44D00F51E2F /* AsyncTaskCommand.m */; };
+		B5D425302A53F5B900F51E2F /* AsyncTaskQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D4252F2A53F5B900F51E2F /* AsyncTaskQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +86,17 @@
 		B5D425192A52BA2E00F51E2F /* ConcreteClass1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteClass1.m; sourceTree = "<group>"; };
 		B5D4251B2A52BA6400F51E2F /* ConcreteClass2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteClass2.h; sourceTree = "<group>"; };
 		B5D4251C2A52BA6400F51E2F /* ConcreteClass2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteClass2.m; sourceTree = "<group>"; };
+		B5D4251F2A53EBB900F51E2F /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		B5D425202A53EBEA00F51E2F /* ConcreteCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCommand.h; sourceTree = "<group>"; };
+		B5D425212A53EBEA00F51E2F /* ConcreteCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCommand.m; sourceTree = "<group>"; };
+		B5D425232A53EC0E00F51E2F /* Receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		B5D425242A53EC0E00F51E2F /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
+		B5D425262A53ECCF00F51E2F /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		B5D425272A53ECCF00F51E2F /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
+		B5D4252B2A53F44D00F51E2F /* AsyncTaskCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncTaskCommand.h; sourceTree = "<group>"; };
+		B5D4252C2A53F44D00F51E2F /* AsyncTaskCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncTaskCommand.m; sourceTree = "<group>"; };
+		B5D4252E2A53F5B900F51E2F /* AsyncTaskQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncTaskQueue.h; sourceTree = "<group>"; };
+		B5D4252F2A53F5B900F51E2F /* AsyncTaskQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncTaskQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +139,7 @@
 				B5D424FF2A51B47D00F51E2F /* Observer Pattern */,
 				B5D425062A52A6C800F51E2F /* Strategy Pattern */,
 				B5D425142A52B9EC00F51E2F /* Template Method Pattern */,
+				B5D4251E2A53EBA700F51E2F /* Command Pattern */,
 				B57422EC2A51746F001247ED /* Main.storyboard */,
 				B57422EF2A517470001247ED /* Assets.xcassets */,
 				B57422F12A517470001247ED /* LaunchScreen.storyboard */,
@@ -211,6 +228,40 @@
 			path = "Template Method Pattern";
 			sourceTree = "<group>";
 		};
+		B5D4251E2A53EBA700F51E2F /* Command Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4251F2A53EBB900F51E2F /* Command.h */,
+				B5D425292A53F40E00F51E2F /* easy */,
+				B5D4252A2A53F42000F51E2F /* AsyncTask */,
+			);
+			path = "Command Pattern";
+			sourceTree = "<group>";
+		};
+		B5D425292A53F40E00F51E2F /* easy */ = {
+			isa = PBXGroup;
+			children = (
+				B5D425232A53EC0E00F51E2F /* Receiver.h */,
+				B5D425242A53EC0E00F51E2F /* Receiver.m */,
+				B5D425202A53EBEA00F51E2F /* ConcreteCommand.h */,
+				B5D425212A53EBEA00F51E2F /* ConcreteCommand.m */,
+				B5D425262A53ECCF00F51E2F /* Invoker.h */,
+				B5D425272A53ECCF00F51E2F /* Invoker.m */,
+			);
+			path = easy;
+			sourceTree = "<group>";
+		};
+		B5D4252A2A53F42000F51E2F /* AsyncTask */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4252B2A53F44D00F51E2F /* AsyncTaskCommand.h */,
+				B5D4252C2A53F44D00F51E2F /* AsyncTaskCommand.m */,
+				B5D4252E2A53F5B900F51E2F /* AsyncTaskQueue.h */,
+				B5D4252F2A53F5B900F51E2F /* AsyncTaskQueue.m */,
+			);
+			path = AsyncTask;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,10 +335,13 @@
 				B57422EB2A51746F001247ED /* ViewController.m in Sources */,
 				B5D4250D2A52A83A00F51E2F /* SubtractionStrategy.m in Sources */,
 				B57423162A517BDF001247ED /* RequestProcessingHandler.m in Sources */,
+				B5D4252D2A53F44D00F51E2F /* AsyncTaskCommand.m in Sources */,
 				B5D425172A52BA0B00F51E2F /* AbstractClass.m in Sources */,
+				B5D425222A53EBEA00F51E2F /* ConcreteCommand.m in Sources */,
 				B5D425102A52A87200F51E2F /* MultiplicationStrategy.m in Sources */,
 				B5D4251D2A52BA6400F51E2F /* ConcreteClass2.m in Sources */,
 				B5D425022A51B4BC00F51E2F /* LoginViewController.m in Sources */,
+				B5D425302A53F5B900F51E2F /* AsyncTaskQueue.m in Sources */,
 				B57423092A5175E1001247ED /* ConcreteHandlerC.m in Sources */,
 				B5D425052A51B59D00F51E2F /* ProfileViewController.m in Sources */,
 				B57423132A517B7D001247ED /* UserPermissionHandler.m in Sources */,
@@ -298,6 +352,8 @@
 				B57423062A5175C9001247ED /* ConcreteHandlerB.m in Sources */,
 				B57422E52A51746F001247ED /* AppDelegate.m in Sources */,
 				B57423102A517B06001247ED /* RequestValidityHandler.m in Sources */,
+				B5D425282A53ECCF00F51E2F /* Invoker.m in Sources */,
+				B5D425252A53EC0E00F51E2F /* Receiver.m in Sources */,
 				B57422F62A517470001247ED /* main.m in Sources */,
 				B5D425132A52A8BF00F51E2F /* Calculator.m in Sources */,
 				B57422E82A51746F001247ED /* SceneDelegate.m in Sources */,
